@@ -40,11 +40,11 @@ disqus_shortname:   https-png93-github-io
 #email:
 #twitter:            username
 #facebook:           username
-github-url:         "https://github.com/png93"
+github-url:         "png93"    # https://github.com/ 뒤 주소만 입력
 #stackoverflow:     123456/username   from a "http://stackoverflow.com/users/123456/username" link
 #linkedin:          username
 #xing:              username
-instagram:          "https://www.instagram.com/2z__im/"
+instagram:          "2z__im"   # https://www.instagram.com/
 #lastfm:            username
 #tumblr:            username
 #medium:            '@username'
