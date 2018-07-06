@@ -5,6 +5,7 @@ date: 2018-03-22
 excerpt: "git-bash를 사용하기 위한 기초적인 명령어, github과 연동하는 방법"
 tag:
 - Git
+feature: https://cdn.pixabay.com/photo/2016/02/19/11/19/computer-1209641_1280.jpg
 comments: true
 ---
 
