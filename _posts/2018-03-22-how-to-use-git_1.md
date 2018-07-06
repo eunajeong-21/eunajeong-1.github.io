@@ -1,7 +1,11 @@
 ---
 layout: post
-title: "git bash 명령어(1)-연결하기"
-categories: [git사용법]
+title: "git 사용법, how to use git"
+date: 2018-03-22
+excerpt: "git-bash를 사용하기 위한 기초적인 명령어, github과 연동하는 방법"
+tag:
+- Git
+comments: true
 ---
 
 github에 repository가 먼저 만들어져 있고,
