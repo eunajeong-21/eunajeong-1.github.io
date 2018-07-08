@@ -21,22 +21,45 @@ comments: true
 
 - - -
 
-###1. 한 번만 하면 되는 초기 설정
+
+### 1. 한 번만 하면 되는 "초기 설정"
 
 사용할 jekyll테마를 내 github으로 복사하면서 저장소가 만들어진 상태였기 때문에, 컴퓨터에 작업할 디렉토리를 생성하는 것부터 시작했습니다.
 
-D:\gitblog 폴더를 만들고, '여기에서 파일을 올리고 내려받고 이것저것 할거야' 라고 지정해 주었어요.
+D:\gitblog 폴더를 만들고, '여기에서 파일을 올리고 내려받고 이것저것 할거야' 라고 지정해 주었어요. git-bash를 실행한 후 아래의 순서대로 명령어를 입력 해주면 됩니다.
 
-<img src="assets/img/post_img/git-bash_initial_commands.png">
+![git-command](https://png93.github.io/assets/img/post_img/git-bash_initial_commands.PNG)
+
+차례대로 명령어들을 살펴볼께요.
+
+<kbd>cd</kbd>  : 디렉토리 변경.
+
+<kbd>git init</kbd>  :  git 저장소 초기화.
+
+<kbd>git config user.name "user name"</kbd>  : github의 username 입력
+
+<kbd>git config user.email "user email"</kbd>  : github에서 사용하는 이메일 계정 입력
+
+<kbd>git clone "Repository 주소"</kbd>  : 원격 저장소를 현재 로컬 디렉토리로 복사.
+
+Repository 주소는 내 저장소 상단 오른쪽에 보면, 'Clone or download'라는 초록색 버튼이 있는데 여기서 복사 해올 수 있어요.
+
+여기까지 완료했다면 기본적인 설정은 끝낸거라고 보면 됩니다.
 
 
 
-### 1. name, email 입력하기
-$ git config --global user.name "깃허브 닉네임"
+### 2. github 저장소 변경 사항 가져오기 & 파일 github 저장소에 올리기
 
-$ git config --global user.email "깃허브 이메일계정"
+블로그를 만들고 git으로 원격 저장소와 로컬(내 컴퓨터)을 연결 해 주었으니 이제  글을 써서 올려볼거에요.
 
-### 2. 원격 저장소 내 컴터로 복사하기
-$ git clone "내 git repository 주소"
 
-ex) $ git clone "https://github.com/png93/png93.gihub.io.git"
+jekyll로 만든 블로그는 **markdown** 이라는 형식을 지원하는데
+css나 html처럼 원하는 형식을 지정해주면서 글을 써내려 갈 수 있기 때문에 잘 사용하면 굉장히 편할 거 같습니다.
+
+처음 접하는 형식이지만, 어려운 건 없어서 사용하다보면 금방 익숙해 질 것 같아요!
+
+저는 markdown 문서를 편집하기 위해 Atom을 설치했는데, [Atom 홈페이지](https://atom.io/) 에 들어가면 무료로 다운 받을 수 있습니다.
+
+새로운 글을 쓰고, 파일을 올릴 준비가 되었다면 다음과 같은 방법으로 원격 저장소에 반영할 수 있습니다.
+
+**▼원격 저장소에 새로운 파일 올리기 ▼**
