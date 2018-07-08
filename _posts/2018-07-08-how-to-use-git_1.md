@@ -28,7 +28,7 @@ comments: true
 
 D:\gitblog 폴더를 만들고, '여기에서 파일을 올리고 내려받고 이것저것 할거야' 라고 지정해 주었어요. git-bash를 실행한 후 아래의 순서대로 명령어를 입력 해주면 됩니다.
 
-![git-init](https://png93.github.io/assets/img/post_img/git-bash_initial_commands.jpg)
+![git-init](https://png93.github.io/assets/img/post/git-bash_initial_commands.jpg)
 
 차례대로 명령어들을 살펴볼께요.
 
@@ -70,11 +70,11 @@ _md문서 파일 이름은 YYYY-MM-DD-제목.md 으로 형식을 지켜 주어�
 
 **▼원격 저장소에 새로운 파일 올리기 ▼**
 
-![git-upload](https://png93.github.io/assets/img/post_img/git_upload_commands.PNG)
+![git-upload](https://png93.github.io/assets/img/post/git_upload_commands.PNG)
 
 git add와 git commit이 명령을 수행하는 단계가 있는데, 아래 그림처럼 동작합니다.
 
-<center><img src = "https://png93.github.io/assets/img/post_img/git layer.png" width="400"/></center>
+<center><img src = "https://png93.github.io/assets/img/post/git layer.png" width="400"/></center>
 
 
 
@@ -107,7 +107,7 @@ git add와 git commit이 명령을 수행하는 단계가 있는데, 아래 그�
 예를 들어 github 저장소에 _posts/test 라는 폴더를 삭제하려면 다음 명령어들을 입력하면 됩니다.
 
 
-<center><img src = "../assets/img/post_img/git_remove_commands.PNG" width="500"/></center>
+<center><img src = "../assets/img/post/git_remove_commands.PNG" width="500"/></center>
 <br>
 
 파일 삭제는 원격 저장소에서만 삭제 하려면 `$git rm --cached <파일이름>`
