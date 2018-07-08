@@ -28,7 +28,7 @@ comments: true
 
 D:\gitblog 폴더를 만들고, '여기에서 파일을 올리고 내려받고 이것저것 할거야' 라고 지정해 주었어요. git-bash를 실행한 후 아래의 순서대로 명령어를 입력 해주면 됩니다.
 
-![git-command](https://png93.github.io/assets/img/post_img/git-bash_initial_commands.jpg)
+![git-init](https://png93.github.io/assets/img/post_img/git-bash_initial_commands.jpg)
 
 차례대로 명령어들을 살펴볼께요.
 
@@ -44,9 +44,12 @@ D:\gitblog 폴더를 만들고, '여기에서 파일을 올리고 내려받고 �
 
 Repository 주소는 내 저장소 상단 오른쪽에 보면, 'Clone or download'라는 초록색 버튼이 있는데 여기서 복사 해올 수 있어요.
 
-여기까지 완료했다면 기본적인 설정은 끝낸거라고 보면 됩니다.
+여기까지 완료했다면 기본적인 설정은 끝낸거라고 보면 됩니다.     
 
-
+#  
+#   
+---
+#  
 
 ### 2. github 저장소 변경 사항 가져오기 & 파일 github 저장소에 올리기
 
@@ -62,4 +65,55 @@ css나 html처럼 원하는 형식을 지정해주면서 글을 써내려 갈 �
 
 새로운 글을 쓰고, 파일을 올릴 준비가 되었다면 다음과 같은 방법으로 원격 저장소에 반영할 수 있습니다.
 
+`md문서 파일 이름은 YYYY-MM-DD-제목.md 으로 형식을 지켜줘야 해요`
+
+#  
+
 **▼원격 저장소에 새로운 파일 올리기 ▼**
+
+![git-upload](https://png93.github.io/assets/img/post_img/git_upload_commands.PNG)
+
+git add와 git commit이 명령을 수행하는 단계가 있는데, 아래의 그림과 같이 움직입니다.
+
+![]((https://png93.github.io/assets/img/post_img/git layer.PNG)
+
+
+이제 명령어를 하나씩 볼까요.
+
+<kbd>git pull origin master</kbd>  :  원격 저장소의 변경 사항을 가져옴.
+
+나중에 push 하면서 문제가 생길 수도 있기 때문에
+파일을 올리기 전에 혹시 있을 변경 사항을 먼저 처리해 주는 게 좋습니다.
+#  
+
+<kbd>git add 파일이름</kbd>  :  staging area에 파일 올리기.
+
+( <kbd>git add .</kbd>  : working directory 내의 모든 파일을 staging area에 올리기. )
+#  
+
+<kbd>git commit -m "커밋 메세지"</kbd>  : 인라인 메세지를 입력하는 커밋.
+
+( <kbd>git commit</kbd> 명령어도 있는데, 인라인 메세지를 사용하는 게 간편해요. )
+#  
+
+<kbd>git push -u origin master</kbd>  :  원격 저장소에 저장.
+
+- - -
+### 3. 폴더 또는 파일 삭제 하기
+
+삭제는 `$git rm` 명령어를 사용합니다.
+
+알아둘 점이 있다면, `$git rm`은 원격 저장소와 로컬의 폴더 또는 파일을 모두 삭제하고, `$git rm --cached` 속성을 사용하면 '원격 저장소에서만' 삭제 됩니다.
+
+<kbd>git rm -r --</kbd>
+
+
+
+- - -
+### 그 외 명령어
+
+<kbd>git remote add origin <github주소></kbd>  : github 저장소와 연결하기
+
+<kbd>git remote -v</kbd>  : 연결된 원격 저장소 확인
+
+<kbd>git status</kbd>  :  현재 상태 확인
