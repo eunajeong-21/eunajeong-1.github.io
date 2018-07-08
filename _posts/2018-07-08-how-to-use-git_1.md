@@ -7,7 +7,7 @@ tag:
 - Git
 - Git bash
 - github
-feature: ../assets/img/title/git.png
+feature: https://png93.github.io/assets/img/title/git.png
 comments: true
 ---
 
