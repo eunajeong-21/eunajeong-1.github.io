@@ -7,7 +7,7 @@ tag:
 - Git
 - Git bash
 - github
-feature: https://cdn.pixabay.com/photo/2017/10/31/19/05/web-design-2906159__480.jpg
+feature: ../assets/img/title/git.png
 comments: true
 ---
 
