@@ -208,4 +208,6 @@ A
          K
 ----------- <delete tree> ------------
 ~~~
-<img src = "https://png93.github.io/assets/img/post/tree.png" style="width: 300px;"/>
+<img src = "https://png93.github.io/assets/img/post/tree.png" style="width: 50%;"/>
+
+![tree](https://png93.github.io/assets/img/post/tree.png){: width=200px}
