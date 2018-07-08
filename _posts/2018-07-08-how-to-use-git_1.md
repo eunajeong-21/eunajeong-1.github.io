@@ -74,7 +74,8 @@ _md문서 파일 이름은 YYYY-MM-DD-제목.md 으로 형식을 지켜 주어�
 
 git add와 git commit이 명령을 수행하는 단계가 있는데, 아래 그림처럼 동작합니다.
 
-![](https://png93.github.io/assets/img/post_img/git layer.png)
+<center><img src = "https://png93.github.io/assets/img/post_img/git layer.png" width="400"/></center>
+
 
 
 
@@ -105,8 +106,9 @@ git add와 git commit이 명령을 수행하는 단계가 있는데, 아래 그�
 
 예를 들어 github 저장소에 _posts/test 라는 폴더를 삭제하려면 다음 명령어들을 입력하면 됩니다.
 
-![](../assets/img/post_img/git_remove_commands.PNG)
 
+<center><img src = "../assets/img/post_img/git_remove_commands.PNG" width="500"/></center>
+<br>
 
 파일 삭제는 원격 저장소에서만 삭제 하려면 `$git rm --cached <파일이름>`
 
