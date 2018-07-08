@@ -105,7 +105,7 @@ git add와 git commit이 명령을 수행하는 단계가 있는데, 아래 그�
 
 예를 들어 github 저장소에 _posts/test 라는 폴더를 삭제하려면 다음 명령어들을 입력하면 됩니다.
 
-![](https://png93.github.io/assets/img/post_img/git_remove_commands.PNG)
+![](../assets/img/post_img/git_remove_commands.PNG)
 
 
 파일 삭제는 원격 저장소에서만 삭제 하려면 `$git rm --cached <파일이름>`
