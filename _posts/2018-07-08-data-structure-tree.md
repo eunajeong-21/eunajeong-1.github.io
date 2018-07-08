@@ -29,7 +29,7 @@ HTML의 DOM(Document Object Model)에서 트리 구조를 찾아 볼 수 있습�
 
 트리는 뿌리, 가지, 잎 세 가지로 구성되어 있습니다.
 
-![](https://png93.github.io/assets/img/post/tree_nodename.png)
+![](https://png93.github.io/assets/img/post/tree_nodename.png){: width = "50%"}
 
 <br>
 
