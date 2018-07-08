@@ -75,7 +75,7 @@ css나 html처럼 원하는 형식을 지정해주면서 글을 써내려 갈 �
 
 git add와 git commit이 명령을 수행하는 단계가 있는데, 아래의 그림과 같이 움직입니다.
 
-![](https://png93.github.io/assets/img/post_img/git layer.PNG)
+![]((https://png93.github.io/assets/img/post_img/git layer.PNG)
 
 
 이제 명령어를 하나씩 볼까요.
@@ -105,14 +105,7 @@ git add와 git commit이 명령을 수행하는 단계가 있는데, 아래의 �
 
 알아둘 점이 있다면, `$git rm`은 원격 저장소와 로컬의 폴더 또는 파일을 모두 삭제하고, `$git rm --cached` 속성을 사용하면 '원격 저장소에서만' 삭제 됩니다.
 
-예를 들어 github 저장소에 _posts/test 라는 폴더를 삭제하려면 다음 명령어들을 입력하면 됩니다.
-
-![](https://png93.github.io/assets/img/post_img/git_delete_commands.PNG)
-
-
->파일 삭제는 원격 저장소에서만 삭제 하려면 `$git rm --cached <파일이름>`
->
->원격 저장소와 로컬 두 곳 모두 삭제하려면  `$git rm <파일이름>`
+<kbd>git rm -r --</kbd>
 
 
 
