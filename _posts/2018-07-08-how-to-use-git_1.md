@@ -28,7 +28,7 @@ comments: true
 
 D:\gitblog 폴더를 만들고, '여기에서 파일을 올리고 내려받고 이것저것 할거야' 라고 지정해 주었어요. git-bash를 실행한 후 아래의 순서대로 명령어를 입력 해주면 됩니다.
 
-![git-command](https://png93.github.io/assets/img/post_img/git-bash_initial_commands.PNG)
+![git-command](https://png93.github.io/assets/img/post_img/git-bash_initial_commands.jpg)
 
 차례대로 명령어들을 살펴볼께요.
 
