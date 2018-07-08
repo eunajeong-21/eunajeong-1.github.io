@@ -18,6 +18,8 @@ comments: true
 
 HTML의 DOM(Document Object Model)에서 트리 구조를 찾아 볼 수 있습니다.
 
+<br>
+
 - - -
 ## 1. 구성요소
 
@@ -49,10 +51,11 @@ HTML의 DOM(Document Object Model)에서 트리 구조를 찾아 볼 수 있습�
 
 ![](https://png93.github.io/assets/img/post/tree_term.png)
 
+<br>
+
 - - -
 ## 3. 노드의 표현 : Left Child - Right Sibling
 
-<br>
 
 노드를 표현하는 방법 중에 "left child - right sibling" 이라는 방법이 있습니다.
 
@@ -60,7 +63,7 @@ HTML의 DOM(Document Object Model)에서 트리 구조를 찾아 볼 수 있습�
 
 <a href = "http://4.bp.blogspot.com/-Z63Mj1jINXA/VO1AXfUCGcI/AAAAAAAAAuM/QoFP9qTvhvg/s1600/2.PNG"><img src = "http://4.bp.blogspot.com/-Z63Mj1jINXA/VO1AXfUCGcI/AAAAAAAAAuM/QoFP9qTvhvg/s1600/2.PNG" /></a>
 
-<br>
+<br/><br/><br/>
 
 
 ▼left child - right sibling 방법으로 구현한 트리 (java)▼
@@ -205,3 +208,4 @@ A
          K
 ----------- <delete tree> ------------
 ~~~
+<img src = "https://png93.github.io/assets/img/post/tree.png" width = "300"/>
