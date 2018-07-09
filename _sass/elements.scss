@@ -104,13 +104,27 @@ hr {
 	}
 }
 
+
+//align 추가
+img.alignleft{
+    float:left
+}
+img.alignright{
+    float:right
+}
+img.aligncenter{
+    display:block;
+    margin:0 auto
+}
+
+
 // images and figures
 img {
     display: block;
 	max-width: 100%;
     width: auto;
     height: auto;
-    vertical-align: middle;
+    //vertical-align: middle;
     margin-left: auto;
     margin-right: auto;
     border: 0;
