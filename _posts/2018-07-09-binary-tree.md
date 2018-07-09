@@ -25,17 +25,21 @@ comments: true
 **2. 완전 이진 트리 (Complete Binary Tree)**
 - Leaf 노드가 왼쪽 부터 채워진 형태의 이진 트리
 
-<img src = "https://png93.github.io/assets/img/post/tree_complete_binary_1.png" style="width: 45%;" />
-<img src = "https://png93.github.io/assets/img/post/tree_complete_binary_2.png" style="width: 45%;"/>
+<img src = "https://png93.github.io/assets/img/post/tree_complete_binary_1.png" style="width: 45%; " />
+<img src = "https://png93.github.io/assets/img/post/tree_complete_binary_2.png" style="width: 45%; float: right"/>
 
-<br/>
+<br/><br/>
 
 아래와 같은 형태는 완전 이진 트리가 아닙니다. 왼쪽 부터 차례대로 채워지지가 않았으니까요.
 
 <img src = "https://png93.github.io/assets/img/post/tree_no_complete_binary.png" style="width: 50%;" />
 
+<br/><br/>
+
 **3. 높이 균형 트리 (Height Balanced Tree)**
 - 루트 노드의 왼쪽 하위 트리와 오른쪽 하위 트리의 높이 차이가 1 이상 나지 않는 이진 트리
+
+<br/>
 
 **4. 완전 높이 균형 트리 (Completely Height Balanced Tree)**
 - 루트 노드의 왼쪽, 오른쪽 하위 트리의 높이가 같은 이진 트리
@@ -179,5 +183,3 @@ E
 A
 ~~~
 <img src = "https://png93.github.io/assets/img/post/tree_full_binary.png" style="width: 40%; float: left;" />
-
-![](https://png93.github.io/assets/img/post/tree_full_binary.png){: style = "width: 40%;"}{: .alignleft}
