@@ -2,7 +2,7 @@
 layout: post
 title: "이진 트리와 트리의 순회, binary tree"
 date: 2018-07-08
-excerpt: "이진 트리의 특징과 전위, 중위, 후위 순회."
+excerpt: "이진 트리의 특징과 세 가지 순회 방법 알아보기"
 tag:
 - Datastructure
 - Algorithm
@@ -28,7 +28,7 @@ comments: true
 <img src = "https://png93.github.io/assets/img/post/tree_complete_binary_1.png" style="width: 40%; float: left" />
 <img src = "https://png93.github.io/assets/img/post/tree_complete_binary_2.png" style="width: 40%; float: right"/>
 
-<br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
 
 아래와 같은 형태는 완전 이진 트리가 아닙니다. 왼쪽 부터 차례대로 채워지지가 않았으니까요.
 
