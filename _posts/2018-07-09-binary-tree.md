@@ -160,8 +160,10 @@ public class BinaryTree<E> {
 }
 
 ~~~
+<img src = "https://png93.github.io/assets/img/post/tree_full_binary.png" style="width: 36%; float: left;" />
 
 출력
+
 ~~~
 ------------ < 전위 순회 > ------------
 A
@@ -188,4 +190,3 @@ G
 E
 A
 ~~~
-<img src = "https://png93.github.io/assets/img/post/tree_full_binary.png" style="width: 40%; float: left;" />
