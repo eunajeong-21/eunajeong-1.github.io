@@ -12,27 +12,27 @@ comments: true
 
 이진 트리, binary tree
 ==
-이진 트리는 모든 노드가 최대 2개까지의 자식 노드만 가질 수 있는 트리 입니다.
+**이진 트리는 모든 노드가 최대 2개까지의 자식 노드만 가질 수 있는 트리 입니다.**
 
 ## 이진 트리 종류
 **1. 포화 이진 트리 (Full Binary Tree)**
 - 모든 노드가 두 개의 자식 노드를 가지며, 모든 잎 노드의 깊이가 같은 트리
 
-<img src = "https://png93.github.io/assets/img/post/tree_full_binary.png" width = "80%" />
+<img src = "https://png93.github.io/assets/img/post/tree_full_binary.png" width = "60%" />
 
 <br>
 
 **2. 완전 이진 트리 (Complete Binary Tree)**
 - Leaf 노드가 왼쪽 부터 채워진 형태의 이진 트리
 
-<img src = "https://png93.github.io/assets/img/post/tree_complete_binary_1.png" width = "50%" />
-<img src = "https://png93.github.io/assets/img/post/tree_complete_binary_2.png" width = "50%" />
+<img src = "https://png93.github.io/assets/img/post/tree_complete_binary_1.png" width = "45%" />
+<img src = "https://png93.github.io/assets/img/post/tree_complete_binary_2.png" width = "45%" align = "right"/>
 
-<br>
+<br/>
 
 아래와 같은 형태는 완전 이진 트리가 아닙니다. 왼쪽 부터 차례대로 채워지지가 않았으니까요.
 
-<img src = "https://png93.github.io/assets/img/post/tree_no_complete_binary.png" width = "80%" />
+<img src = "https://png93.github.io/assets/img/post/tree_no_complete_binary.png" width = "60%" />
 
 **3. 높이 균형 트리 (Height Balanced Tree)**
 - 루트 노드의 왼쪽 하위 트리와 오른쪽 하위 트리의 높이 차이가 1 이상 나지 않는 이진 트리
@@ -51,12 +51,12 @@ _이진 트리는 컴파일러나 탐색 등에 사용 되는 자료구조이기
 **1. 전위 순회 (Preorder Traversal)**
 - 전위 순회는 '**루트** 노드 - **왼쪽** 하위 트리 - **오른쪽** 하위 트리' 순서로 트리를 순회하는 방법 입니다.
 
-<img src = "https://png93.github.io/assets/img/post/tree_preorder.png" width = "80%" /><br/>
+<img src = "https://png93.github.io/assets/img/post/tree_preorder.png" width = "60%" /><br/>
 
 **2. 중위 순회 (Inorder Traversal)**
 - 중위 순회는 '**왼쪽** 하위 트리 - **루트** 노드 - **오른쪽** 하위 트리' 순서로 트리를 순회하는 방법 입니다.
 
-<img src = "https://png93.github.io/assets/img/post/tree_inorder.png" width = "80%" /><br/>
+<img src = "https://png93.github.io/assets/img/post/tree_inorder.png" width = "60%" /><br/>
 
 중위 순회는 대표적으로 '수식 트리'에 활용 됩니다.
 <br/>
@@ -64,4 +64,4 @@ _이진 트리는 컴파일러나 탐색 등에 사용 되는 자료구조이기
 **3. 후위 순회 (Postorder Traversal)**
 - 후위 순회는 '**왼쪽** 하위 트리 - **오른쪽** 하위 트리 - **루트** 노드' 순서로 트리를 순회하는 방법 입니다.
 
-<img src = "https://png93.github.io/assets/img/post/tree_postorder.png" width = "80%" /><br/>
+<img src = "https://png93.github.io/assets/img/post/tree_postorder.png" width = "60%" /><br/>
