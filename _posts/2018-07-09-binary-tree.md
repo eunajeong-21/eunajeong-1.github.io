@@ -34,7 +34,8 @@ comments: true
 
 <br/>
 
-아래와 같은 형태는 완전 이진 트리가 아닙니다. 왼쪽 부터 차례대로 채워지지가 않았으니까요.{: .notice}
+아래와 같은 형태는 완전 이진 트리가 아닙니다. 왼쪽 부터 차례대로 채워지지가 않았으니까요.
+{: .notice}
 
 <img src = "https://png93.github.io/assets/img/post/tree_no_complete_binary.png" style="width: 50%;" />
 
@@ -186,5 +187,3 @@ E
 A
 ~~~
 <img src = "https://png93.github.io/assets/img/post/tree_full_binary.png" style="width: 40%; float: left;" />
-
-![binarytree](https://png93.github.io/assets/img/post/tree_full_binary.png){: .image-right}
