@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "이진 트리와 트리의 순회, binary tree"
+title: "이진 트리와 트리의 순회, binary tree and traversal"
 date: 2018-07-08
 excerpt: "이진 트리의 특징과 세 가지 순회 방법 알아보기"
 tag:
@@ -18,9 +18,11 @@ comments: true
 **1. 포화 이진 트리 (Full Binary Tree)**
 - 모든 노드가 두 개의 자식 노드를 가지며, 모든 잎 노드의 깊이가 같은 트리
 
-<img src = "https://png93.github.io/assets/img/post/tree_full_binary.png" style="width: 50%;" />
+<figure>
+<img src = "https://png93.github.io/assets/img/post/tree_full_binary.png" style = "width: 60%; "/>
+</figure>
 
-<br>
+<br/>
 
 **2. 완전 이진 트리 (Complete Binary Tree)**
 - Leaf 노드가 왼쪽 부터 채워진 형태의 이진 트리
