@@ -4,8 +4,8 @@ title: "자료구조 트리, datastructure tree"
 date: 2018-07-08
 excerpt: "트리 자료구조에 대한 간단한 설명"
 tag:
-- datastructure
-
+- Datastructure
+- Algorithm
 feature: https://png93.github.io/assets/img/title/data_structure.jpg
 comments: true
 ---
