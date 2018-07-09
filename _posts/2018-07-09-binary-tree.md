@@ -31,7 +31,7 @@ comments: true
 
 <figure class="half">
 <img src = "https://png93.github.io/assets/img/post/tree_complete_binary_1.png" style="width: 40%;" />
-<img src = "https://png93.github.io/assets/img/post/tree_complete_binary_2.png" style="width: 40%;"/>
+<img src = "https://png93.github.io/assets/img/post/tree_complete_binary_2.png" style="width: 40%; float: right; "/>
 </figure>
 
 <br/>
