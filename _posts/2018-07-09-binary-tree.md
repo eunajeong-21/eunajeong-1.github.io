@@ -25,10 +25,10 @@ comments: true
 **2. 완전 이진 트리 (Complete Binary Tree)**
 - Leaf 노드가 왼쪽 부터 채워진 형태의 이진 트리
 
-<img src = "https://png93.github.io/assets/img/post/tree_complete_binary_1.png" style="width: 45%; " />
-<img src = "https://png93.github.io/assets/img/post/tree_complete_binary_2.png" style="width: 45%; float: right"/>
+<img src = "https://png93.github.io/assets/img/post/tree_complete_binary_1.png" style="width: 40%; float: left" />
+<img src = "https://png93.github.io/assets/img/post/tree_complete_binary_2.png" style="width: 40%; float: right"/>
 
-<br/><br/>
+<br/><br/><br/><br/><br/><br/><br/>
 
 아래와 같은 형태는 완전 이진 트리가 아닙니다. 왼쪽 부터 차례대로 채워지지가 않았으니까요.
 
@@ -153,7 +153,6 @@ public class BinaryTree<E> {
 }
 
 ~~~
-<br/>
 
 출력
 ~~~
