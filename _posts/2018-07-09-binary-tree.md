@@ -178,6 +178,6 @@ G
 E
 A
 ~~~
-<img src = "https://png93.github.io/assets/img/post/tree_full_binary.png" style="width: 35%; align = left;" />
+<img src = "https://png93.github.io/assets/img/post/tree_full_binary.png" style="width: 40%; float: left;" />
 
 ![](https://png93.github.io/assets/img/post/tree_full_binary.png){: style = "width: 40%;"}{: .alignleft}
