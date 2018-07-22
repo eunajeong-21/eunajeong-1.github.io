@@ -14,14 +14,14 @@ comments: true
 _백준 2749번 문제를 풀면서 공부한 내용입니다_
 {: .notice}
 
-<br/>
-
 <a href = "https://www.acmicpc.net/problem/2749"><img src = "https://png93.github.io/assets/img/title/baekjoon.PNG"></a>
 
 <br/>
 
 ## 피보나치 수
 피보나치 수는 앞에 있는 두 수의 합이 현재의 수가 되는 규칙을 가지는 수이다.
+
 | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7  | 8  | 9  | 10 | ... |
 |:--|:-:|:-:|:-:|:-:|:-:|:-:|:--:|:--:|:--:|:--:|----:|
 | 0 | 1 | 1 | 2 | 3 | 5 | 8 | 13 | 21 | 34 | 55 | ... |
+{: rules="groups"}
