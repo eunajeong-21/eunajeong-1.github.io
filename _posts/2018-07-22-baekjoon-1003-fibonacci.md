@@ -1,7 +1,7 @@
 ---
 layout: post
-date: 2018-07-22
 title: [백준1003] 피보나치 함수
+date: 2018-07-22
 excerpt: 피보나치 함수의 호출 횟수 구하기
 tag: [Algoritm, Baekjoon, Fibonacci]
 feature: https://png93.github.io/assets/img/title/puzzle.jpg
@@ -49,8 +49,9 @@ fibonacci(6) : {5, 8}
 **fibonacci(n) : {x, y} 일때 fibonacci(n+1) : {y, x+y} 이다. (단, n > 0)**
 {: .notice}
 
-\<
+<br/>
 
+_\< Q1003_FibonacciFunction.java \>_
 ~~~java
 import java.util.ArrayList;
 import java.util.List;
