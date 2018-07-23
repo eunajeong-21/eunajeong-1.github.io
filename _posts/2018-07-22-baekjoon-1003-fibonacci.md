@@ -42,13 +42,14 @@ fibonacci(2) : {1, 1} <br/>
 fibonacci(3) : {1, 2} <br/>
 fibonacci(4) : {2, 3} <br/>
 fibonacci(5) : {3, 5} <br/>
-fibonacci(6) : {5, 8}
+fibonacci(6) : {5, 8} <br/>
+...
 - - -
 
 위 과정에서 내가 찾은 규칙은 다음과 같다.
 
-**fibonacci(n) : {x, y} 일때 fibonacci(n+1) : {y, x+y} 이다. (단, n > 0)**
-{: .notice}
+>**fibonacci(n) : {x, y} 일때 fibonacci(n+1) : {y, x+y} 이다. (단, n > 0)**
+
 
 <br/>
 
