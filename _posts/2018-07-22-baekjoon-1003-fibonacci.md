@@ -1,12 +1,13 @@
 ---
 layout: post
-title: [백준1003] 피보나치 함수
+title: "[백준1003] 피보나치 함수"
 date: 2018-07-22
-excerpt: 피보나치 함수의 호출 횟수 구하기
+excerpt: "피보나치 함수의 호출 횟수 구하기"
 tag: [Algoritm, Baekjoon, Fibonacci]
 feature: https://png93.github.io/assets/img/title/puzzle.jpg
 comments: true
 ---
+
 _백준 1003번 문제를 풀면서 공부한 내용입니다._
 {: .notice}
 
