@@ -11,6 +11,10 @@ feature: https://png93.github.io/assets/img/title/data_structure.jpg
 comments: true
 ---
 
+_『뇌를 자극하는 알고리즘』 을 바탕으로 공부한 내용입니다._
+{: .notice}
+
+
 트리, Tree
 ==
 <br>

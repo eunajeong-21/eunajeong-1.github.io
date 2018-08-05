@@ -8,7 +8,7 @@ feature: https://png93.github.io/assets/img/title/puzzle.jpg
 comments: true
 ---
 
-_백준 1003번 문제를 풀면서 공부한 내용입니다._
+_백준 1003번 문제를 푼 과정입니다._
 {: .notice}
 
 <a href = "https://www.acmicpc.net/problem/1003"><img src = "https://png93.github.io/assets/img/title/baekjoon.PNG"></a>
