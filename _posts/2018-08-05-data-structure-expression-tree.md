@@ -23,13 +23,13 @@ _『뇌를 자극하는 알고리즘』 을 바탕으로 공부한 내용입니�
 
 ## 수식 트리 구축
 
-1. 후위 표기식 __뒤에서__ 부터 읽기.
+1. 후위 표기식 __뒤에서__ 부터 읽기. <br>
 후위 표기식을 뒤에서 부터 읽어서, 맨 처음 토큰이 루트 노드가 되고 그 다음 토큰을 계속해서 읽으면서 연산자이면 양쪽 자식을 만들어줍니다.
 <br>
 위와 같은 방식으로 C언어 코드를 작성 하였는데, java 코드로 변경하는 데 어려움을 겪어서.. 아래 방법을 사용했습니다.
 <br>
 
-2. 후위 표기식 __앞에서__ 부터 읽기.
+2. 후위 표기식 __앞에서__ 부터 읽기. <br>
 후위 표기식을 앞에서 부터 읽으면서 규칙에 따라 스택에 담는 방법입니다.
 
 - 피연산자이면, 노드를 만들어 스택에 쌓는다.
@@ -38,7 +38,7 @@ _『뇌를 자극하는 알고리즘』 을 바탕으로 공부한 내용입니�
 - 식을 모두 읽을 때 까지 반복한다.
 <br>
 
-(참고한 블로그↓)
+(참고한 블로그)
 [수식 트리의 구현](http://blog.naver.com/PostView.nhn?blogId=muramura12&logNo=220704218849&redirect=Dlog&widgetTypeCall=true)
 
 
@@ -52,7 +52,7 @@ import java.util.Stack;
 
 /*
  * 수식 트리 구축, 계산, 출력 구현
- 	- 수식은 후위표기식으로 입력되며 연산자와 피연산자들은 공백 하나로 구분된다고 가정.
+ *	- 수식은 후위표기식으로 입력되며 연산자와 피연산자들은 공백 하나로 구분된다고 가정.
  */
 
 public class ExpressionTree {
@@ -159,14 +159,13 @@ public class ExpressionTree {
 		}
 
 	}
-
-}
-
 ~~~
+
 <br>
 
 ExpressionTreeMain.java
-~~~java
+
+{% highlight java %}
 package data_structure.tree;
 
 import data_structure.tree.ExpressionTree.Node;
@@ -189,8 +188,8 @@ public class ExpressionTreeMain {
 	}
 
 }
+{% endhighlight %}
 
-~~~
 <br>
 
 출력결과
