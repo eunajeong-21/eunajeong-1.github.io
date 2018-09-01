@@ -11,13 +11,13 @@ feature: https://png93.github.io/assets/img/title/git.png
 comments: true
 ---
 
-개발자가 되고자 하기 때문에, 공부하는 내용이나 앞으로 하게 될 프로젝트들을 정리할 나만의 공간을 만들어 놓으면 여러모로 좋을 것 같다는 생각이 들었습니다.
-무엇보다 기억력을 믿기 보단 기록을 해 두는게 좋은 방법이니까요.
+많은 기술 블로그들을 보면서,
+공부하는 내용과 프로젝트들을 정리할 수 있는 공간을 만들어 놓으면 여러모로 좋겠다는 생각이 들었습니다.
 
-이러한 이유로 저는 github pages를 이용해서 블로그를 만들어 보게 되었습니다.
+이러한 이유로 저는 github pages를 이용한 블로그를 만들게 되었습니다.
+github pages는 처음엔 호기심으로 찾아봤는데, 직접 해보니 약간 골치아프지만 만들어가는 과정이 재밌는 것 같네요ㅎㅎ
 
-
-이 글에서는 github 저장소를 관리하기 위한 아주아주 기초적인 git 사용법을 설명해 보도록 하겠습니다.
+아무튼, 이 글에서는 github 저장소를 관리하기 위한 아주아주 기초적인 git 사용법을 정리해 보았습니다.
 
 - - -
 
@@ -104,7 +104,7 @@ git add와 git commit이 명령을 수행하는 단계가 있는데, 아래 그�
 
 알아둘 점이 있다면, `$git rm`은 원격 저장소와 로컬의 폴더 또는 파일을 모두 삭제하고, `$git rm --cached` 속성을 사용하면 '원격 저장소에서만' 삭제 됩니다.
 
-예를 들어 github 저장소에 _posts/test 라는 폴더를 삭제하려면 다음 명령어들을 입력하면 됩니다.
+예를 들어 github 저장소에 \_posts/test 라는 폴더를 삭제하려면 다음 명령어들을 입력하면 됩니다.
 
 
 <center><img src = "../assets/img/post/git_remove_commands.PNG" width="500"/></center>
@@ -120,7 +120,7 @@ git add와 git commit이 명령을 수행하는 단계가 있는데, 아래 그�
 
 ## 그 외 명령어
 
-<kbd>git remote add origin https://github.com/나머지주소 </kbd>  :  github 저장소와 연결하기 (초기설정)
+<kbd>git remote add origin \https://github.com/png93/png93.github.io </kbd>  :  github 저장소와 연결하기 (초기설정)
 
 <kbd>git remote -v</kbd>  : 연결된 원격 저장소 확인
 
