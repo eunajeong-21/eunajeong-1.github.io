@@ -53,17 +53,18 @@ Repository 주소는 내 저장소 상단 오른쪽에 보면, 'Clone or downloa
 블로그를 만들고 git으로 원격 저장소와 로컬(내 컴퓨터)을 연결 해 주었으니 이제  글을 써서 올려볼거에요.
 
 
-jekyll로 만든 블로그는 **markdown** 이라는 형식을 지원하는데
-css나 html처럼 원하는 형식을 지정해주면서 글을 써내려 갈 수 있기 때문에 잘 사용하면 굉장히 편할 거 같습니다.
+jekyll로 만든 블로그는 **markdown** 이라는 형식을 지원하는데,
+css나 html처럼 원하는 형식을 지정해주면서 글을 써내려 갈 수 있습니다.
 
-처음 접하는 형식이지만, 어려운 건 없어서 사용하다보면 금방 익숙해 질 것 같아요!
+처음 접하는 형식이지만, 어려운 건 없어서 사용하다보면 금방 익숙해 질 수 있습니다!
 
-저는 markdown 문서를 편집하기 위해 Atom을 설치했는데, [Atom 홈페이지](https://atom.io/) 에 들어가면 무료로 다운 받을 수 있습니다.
+참고로 저는 markdown 편집기로 Atom을 설치했습니다.
+[Atom 홈페이지](https://atom.io/) 에 들어가면 무료로 다운 받을 수 있어용
 
-새로운 글을 쓰고, 파일을 올릴 준비가 되었다면 다음과 같은 방법으로 원격 저장소에 반영할 수 있습니다.
+1번 과정을 완료하고, markdown 문서 또는 다른 새로운 파일이 준비 되었다면 다음과 같은 방법으로 원격 저장소에 반영할 수 있습니다.
 
 
-_md문서 파일 이름은 YYYY-MM-DD-제목.md 으로 형식을 지켜 주어야 합니다._
+_markdown 문서의 파일 이름은 YYYY-MM-DD-제목.md 의 형식을 지켜 주어야 합니다._
 
 
 
@@ -72,14 +73,14 @@ _md문서 파일 이름은 YYYY-MM-DD-제목.md 으로 형식을 지켜 주어�
 
 ![git-upload](https://png93.github.io/assets/img/post/git_upload_commands.PNG)
 
-git add와 git commit이 명령을 수행하는 단계가 있는데, 아래 그림처럼 동작합니다.
+참고로 git add와 git commit이 명령을 수행하는 단계가 있는데, 아래 그림처럼 동작합니다.
 
 <center><img src = "https://png93.github.io/assets/img/post/git layer.png" width="400"/></center>
 
 
+</br>
 
-
-이제 명령어를 하나씩 볼까요.
+이제 명령어들을 차례대로 볼께요.
 
 <kbd>git pull origin master</kbd>  :  원격 저장소의 변경 사항을 가져옴.
 
@@ -120,7 +121,7 @@ git add와 git commit이 명령을 수행하는 단계가 있는데, 아래 그�
 
 ## 그 외 명령어
 
-<kbd>git remote add origin \https://github.com/png93/png93.github.io </kbd>  :  github 저장소와 연결하기 (초기설정)
+<kbd>git remote add origin https://github.com/png93/png93.github.io </kbd>  :  github 저장소와 연결하기 (초기설정)
 
 <kbd>git remote -v</kbd>  : 연결된 원격 저장소 확인
 
