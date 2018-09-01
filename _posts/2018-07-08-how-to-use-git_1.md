@@ -120,7 +120,7 @@ git add와 git commit이 명령을 수행하는 단계가 있는데, 아래 그�
 
 ## 그 외 명령어
 
-<kbd>git remote add origin \<github주소\>  </kbd>  :  github 저장소와 연결하기
+<kbd>git remote add origin https://github.com/나머지주소 </kbd>  :  github 저장소와 연결하기 (초기설정)
 
 <kbd>git remote -v</kbd>  : 연결된 원격 저장소 확인
 
