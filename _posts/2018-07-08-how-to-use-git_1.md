@@ -77,8 +77,7 @@ _markdown 문서의 파일 이름은 YYYY-MM-DD-제목.md 의 형식을 지켜 �
 
 <center><img src = "https://png93.github.io/assets/img/post/git layer.png" width="400"/></center>
 
-
-</br>
+<br>
 
 이제 명령어들을 차례대로 볼께요.
 
