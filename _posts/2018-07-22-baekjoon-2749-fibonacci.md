@@ -7,7 +7,7 @@ tag:
 - Baekjoon
 - Algorithm
 - Fibonacci
-feature: https://png93.github.io/assets/img/title/blue-cube.jpg
+feature: https://png93.github.io/assets/img/title/algorithm.jpg
 comments: true
 ---
 
