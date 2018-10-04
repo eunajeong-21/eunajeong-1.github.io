@@ -6,7 +6,7 @@ excerpt: "피사노 주기를 이용하여 N번째 피보나치 수를 1,000,000
 tag:
 - Baekjoon
 - Fibonacci
-feature: https://png93.github.io/assets/img/title/blue-cube.jpg
+feature: https://png93.github.io/assets/img/title/algorithm.jpg
 comments: true
 ---
 
