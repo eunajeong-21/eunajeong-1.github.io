@@ -3,7 +3,7 @@ layout: post
 title: "[백준1003] 피보나치 함수"
 date: 2018-07-22
 excerpt: "피보나치 함수의 호출 횟수 구하기"
-tag: [Algorithm, Baekjoon, Fibonacci]
+tag: [Baekjoon, Fibonacci]
 feature: https://png93.github.io/assets/img/title/blue-cube.jpg
 comments: true
 ---
