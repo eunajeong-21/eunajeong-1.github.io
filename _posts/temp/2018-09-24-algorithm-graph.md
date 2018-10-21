@@ -14,9 +14,9 @@ comments: true
 ==
 
 [뇌를 자극하는 알고리즘](http://www.hanbit.co.kr/store/books/look.php?p_code=B3450156021) 으로 공부한 내용입니다.
-{: notice}
+{: .notice}
 
-###그래프의 정의
+### 그래프의 정의
 
 정점(Vertex)집합을 V, 간선(Edge)집합을 E 라고 할 때,
 
