@@ -76,7 +76,8 @@ cf) 역정규화 : 정규화를 진행하다가 테이블이 너무 많이 분�
 
 정의: 여러 사용자들이 공유하는 데이터베이스 객체. 호출 될 때마다 중복되지 않은 고유한 숫자를 리턴한다.  
 _기본키 속성에 사용할 값을 발생시킬 때 사용한다._  
-> 시퀀스명.NEXTVAL - 추출
+
+> 시퀀스명.NEXTVAL - 추출  
 > 시퀀스명.CURRVAL - 참조
 
 ~~~sql
@@ -95,6 +96,7 @@ NOCYCLE;
 - 해당 테이블과 논리적으로 독립적이다.
 - Oracle 서버에 의해 자동으로 관리된다.
 - 테이블을 삭제하면 관련 인덱스는 자동으로 삭제된다.  
+
 ~~~sql
 CREATE INDEX emp_ename_idx ON emp(ename);
 ~~~
@@ -115,7 +117,7 @@ CREATE INDEX emp_ename_idx ON emp(ename);
 
 
 [자주 쓰이는 증가함수]  
-_증가함수: 데이터의 크기 n에 대해 알고리즘 수행시간이 증가하는 비율_  
+_증가함수 : 데이터의 크기 n에 대해 알고리즘 수행시간이 증가하는 비율_  
 
 
  \\(O(1)\\) - 해시 테이블  
@@ -130,13 +132,13 @@ _증가함수: 데이터의 크기 n에 대해 알고리즘 수행시간이 증�
 
 ### 정렬 알고리즘
 
-#### 1. 거품 정렬 (Bubble Sort)
+#### 1. 거품 정렬 (Bubble Sort) _ \\(O(N^{2})\\)
 
 - 데이터 집합을 순회하면서 이웃 요소끼리 비교와 교환을 수행한다.
 - 한번 순회가 끝날 때마다 가장 큰 값이 마지막에 위치하게 되며, 순회 할 범위가 1씩 줄어든다.  
 
 거품 정렬의 비교횟수 = (n-1) + (n-2) + (n-3) + ... + 1 =
-\\( \frac{(n-1)n}{2} \\)  〓▶ \\(O(N^{2})\\)  
+\\( \frac{n(n-1)}{2} \\)
 
 ~~~java
 void bubbleSort(int[] data, int len) {
@@ -156,7 +158,39 @@ void bubbleSort(int[] data, int len) {
 
 <br/>
 
-#### 퀵 정렬
+#### 2. 삽입 정렬 _ \\( O(N^{2}) \\)  
+
+- 데이터 집합을 순회 하면서 하나의 데이터와 그 앞 부분의 데이터들을 비교하여 들어갈 자리를 탐색 후 삽입하는 방법.  
+- i번째 데이터를 정렬할 순서가 되었을 때, 0부터 i-1 까지의 데이터들은 정렬되어 있다.  
+
+삽입 정렬 비교 횟수 = 1 + 2 + 3 + ... + (n-1) = \\( \frac{n(n-1)}{2} \\)  
+
+~~~java
+import java.util.Arrays;
+
+void insertionSort(int[] data, int len){
+
+  for(int i = 1; i < len; i++) {
+    if(data[i-1] >= data[i]) continue;
+
+    int value = data[i];
+    for(int j = 0; j < i; j++) {
+      if(data[j] > value){
+        int[] temp = Arrays.copyOfRange(data, j, i);
+        int ti = 0;
+        for(int k = j + 1; k <= i; k++)
+            data[k] = temp[ti++];
+        data[j] = value;
+        break;
+      }
+    }
+  }
+
+}
+~~~
+<br/>
+
+#### 3. 퀵 정렬 _ \\( O(NlogN) \\)
 1. 데이터 집합 내에서 기준 요소(Pivot) 하나를 선택한다.
 2. 집합을 순회하면서 Pivot 보다 작은 값은 왼편에 큰 값은 오른편에 위치시킨다.
 3. 더이상 나눌 수 없을 때 까지 왼쪽, 오른쪽으로 집합을 나누면서 1,2를 수행한다.  
@@ -200,3 +234,149 @@ void quickSort(int[] data, int left, int right){
 
 }
 ~~~
+<br/>
+
+#### 4. 병합 정렬 _ \\( O(NlogN) \\)
+- 주어진 데이터 집합을 더 이상 나눌 수 없을 때 까지 나눈 후,
+"정렬하면서" 병합하는 정렬 방법이다.  
+
+~~~java
+void mergeSort(int[] data, int start, int end){
+
+  if(start >= end) return;
+
+  int middle = (start + end) / 2;
+  mergeSort(data, start, middle - 1);
+  mergeSort(data, middle + 1, end);
+
+  int left = start;
+  int right = middle + 1;
+
+  int[] mergeData = new int[end - start + 1];
+  int mergeIndex = 0;
+
+  // left 그룹과 right 그룹을 mergeData에 병합하며 정렬
+  while(left <= middle && right <= end){
+    if(data[left] < data[right]){
+      mergeData[mergeIndex++] = data[left];
+      left++;
+    } else {
+      mergeData[mergeIndex++] = data[right];
+      right++;
+    }
+  }
+
+  while(left <= middle)
+    mergeData[mergeIndex++] = data[left++];
+
+  while(right <= end)
+    mergeData[mergeIndex++] = data[right++];
+
+  mergeIndex = 0;
+  for(int i = start; i <= end; i++){
+    data[i] = mergeData[mergeIndex++];
+  }
+
+}
+~~~
+<br/>
+
+### 자료구조
+
+#### 스택(Stack)
+- FILO 또는 LIFO 자료구조
+- push(), pop()
+- java.util.Stack
+- 콜스택, 자동메모리 스택
+
+#### 큐(Queue)
+- FIFO 자료구조
+- Enqueue: 삽입연산, 후단(Rear)에서 수행, offer()
+- Dequeue: 제거연산, 전단(Front)에서 수행, poll()
+- java.util.Queue 인터페이스  
+
+#### 맵
+- Key 와 Value 한쌍
+- Key 값은 중복 허용하지 않음
+- Key 값을 통해 Value 값 검색
+- java.util.HashMap  
+
+#### List
+- 순서가 있고, 중복을 허용한다.
+- ArrayList: 객체 내부 배열에 데잍를 저장
+- LinkedList: 하나의 데이터를 갖는 노드 여러개를 연결
+
+
+#### Set
+- 순서가 없고, 중복을 허용하지 않는다.
+
+
+
+## 네트워크
+
+### OSI 7계층 모델
+
+(7계층 → 1계층 순서)  
+Application - Presentation - Session - Transport(TCP/UDP) - Network(IP) - DataLink - Physical  
+
+
+### TCP/IP 모델
+Application - Transport - Internet - DataLink - Physical  
+
+
+### TCP vs UDP
+1. TCP (Trasfer Control Protocol)  
+  - **신뢰성 높은** end-to-end 스트림 통신 프로토콜
+  - **연결 지향**
+  - 전송자가 보낸 순서대로 수신자에게 바이트가 도착
+  - 데이터가 손실되는 상황을 막아주기 때문에 어플리케이션 코딩하기 쉬운 편
+
+2. UDP (User Datagram Protocol)
+  - **신뢰성 낮은** end-to-end 데이터그램 프로토콜
+  - **비연결 지향**
+  - 간단한 요청-응답 매커니즘에 기반하여, 패킷 손실 감지와 재전송은 상대편이 책임진다.  
+
+_cf) TCP - 전화 / UDP - 편지_
+
+TCP는 송수신 양단간 연결을 먼저 설정하고 양방향으로 데이터를 전송하며,  
+UDP는 따로 연결 설정을 하지 않고 즉, 수신자가 데이터를 받을 준비를 했는지 확인하지 않고 단방향 전송을 수행한다.
+{: .notice}
+
+<br/>
+
+## 운영체제
+
+### 프로세스와 쓰레드  
+ 프로세스 = 공장, 쓰레드 = 일꾼으로 비유할 수 있다.  
+ {: .notice}
+
+[Process]
+- 프로세스는 간단히 말해 '실행 중인 프로그램'이다.  
+- OS로부터 메모리를 할당 받으면 프로세스가 된다.
+- CPU가 할당되는 실체
+- **운영체제가 관리하는 프로그램의 최소 단위**
+- 실행(Run), 준비(Ready), 대기(Block) 상태가 있다.
+- 프로세스는 데이터, 메모리, 쓰레드로 구성되어 있다.
+
+[Thread]
+- 하나의 프로세스에는 최소 하나 이상의 쓰레드가 존재한다.
+- **프로세스의 자원을 이용하여 실제로 작업을 처리하는 실행의 흐름**
+- 싱글쓰레드, 멀티쓰레드
+
+<br/>
+
+#### 멀티태스킹(멀티프로세싱)과 멀티쓰레딩
+- 멀티태스킹: 여러 개의 프로세스가 동시에 실행되는 것
+- 멀티쓰레딩: 하나의 프로세스 내에서 여러 쓰레드가 동시에 작업을 수행하는 것
+
+<br/>
+
+[멀티쓰레딩의 장점]
+- 자원을 효율적으로 사용할 수 있다.
+- 작업이 분리되어 코드가 간결해 진다.
+- CPU 사용률을 향상시킨다.
+- 채팅하면서 파일을 다운로드받고, 통화를 할 수 있는 이유가 멀티쓰레드로 작성되어 있기 때문이다.  
+
+[멀티쓰레딩의 단점]
+- 여러 쓰레드가 같은 프로세스 내에서 자원을 공유하면서 작업 하기 때문에 **Synchronization(동기화), DeadLock(교착상태)** 과 같은 문제들을 고려해야 한다.
+- 교착상태: 두 쓰레드가 자원을 점유한 상태에서 ㅡ서로 상대편이 점유한 자원을 기다리느라 진행이 멈춰있는 상태
