@@ -321,7 +321,7 @@ Application - Presentation - Session - Transport(TCP/UDP) - Network(IP) - DataLi
 
 
 ### TCP/IP 모델
-Application - Transport - Internet - DataLink - Physical  
+Application - Transport(TCP/IP) - Internet(IP) - DataLink - Physical
 
 
 ### TCP vs UDP
