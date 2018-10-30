@@ -388,7 +388,7 @@ _교착상태: 두 쓰레드가 자원을 점유한 상태에서 서로 상대�
 ## 시험에 나온 문제
 
 * 세션과 쿠키의 차이
-* <a href="#2">__encryption과 hashing의 차이__</a>
+* [__encryption과 hashing의 차이__](#1.encryption과-hashing)
 * __clustered index와 Non clustered index__
 * 스택, 큐, 덱의 차이
 * Join, __Group By__ 등의 sql문
@@ -397,4 +397,4 @@ _교착상태: 두 쓰레드가 자원을 점유한 상태에서 서로 상대�
   - JavaScript 전위증가, 후위증가 연산
 
 
-#### <p id="2">encryption과 hashing</p>
+### 1.encryption과 hashing
