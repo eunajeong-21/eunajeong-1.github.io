@@ -207,3 +207,20 @@ kbd {
     font-weight: 300;
     margin-bottom: 10px;
 }
+
+/*********글씨 강조 관련**********/
+// 노란 형광펜
+hly {
+    //display: inline-block;
+    background-color: #F4FA58;
+}
+
+// 빨간 형광펜
+hlr {
+    background-color: #F79F81;
+}
+
+// 파란 형광펜
+hlb {
+    background-color: #819FF7;
+}
