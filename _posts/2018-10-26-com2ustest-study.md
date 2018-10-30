@@ -8,6 +8,21 @@ tag:
 comments: true
 ---
 
+
+## 시험에 나온 문제
+
+* 세션과 쿠키의 차이
+* [__encryption과 hashing의 차이__](#1.encryption과-hashing)
+* __clustered index와 Non clustered index__
+* 스택, 큐, 덱의 차이
+* Join, __Group By__ 등의 sql문
+* JavaScript
+  - __undefined와 null 비교__
+  - JavaScript 전위증가, 후위증가 연산
+
+- - -
+
+
 ## 데이터베이스 관련
 
 ### 정규화 (Normalization)
@@ -385,16 +400,5 @@ _교착상태: 두 쓰레드가 자원을 점유한 상태에서 서로 상대�
 
 ---
 
-## 시험에 나온 문제
 
-* 세션과 쿠키의 차이
-* [__encryption과 hashing의 차이__](#1.encryption과-hashing)
-* __clustered index와 Non clustered index__
-* 스택, 큐, 덱의 차이
-* Join, __Group By__ 등의 sql문
-* JavaScript
-  - __undefined와 null 비교__
-  - JavaScript 전위증가, 후위증가 연산
-
-
-### 1.encryption과 hashing
+###1.encryption과 hashing
