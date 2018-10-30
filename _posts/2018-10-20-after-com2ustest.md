@@ -8,7 +8,7 @@ tag:
 comments: true
 ---
 
-## 시험에 나온 문제
+## <hlr>시험에 나온 문제</hlr>
 
 * 세션과 쿠키의 차이
 * [__encryption과 hashing의 차이__](#encryption과-hashing)
