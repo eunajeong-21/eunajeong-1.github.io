@@ -2,7 +2,6 @@
 layout: post
 title: "[취준] 면접 준비(삼성전자)"
 date: 2018-11-01
-excerpt: "오라클 설치와 설정 방법"
 tag:
 - 취준
 comments: true
