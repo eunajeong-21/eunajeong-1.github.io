@@ -2,6 +2,7 @@
 layout: post
 title: "[취준] 면접 준비(삼성전자)"
 date: 2018-11-01
+excerpt: "예상 질문 - 답변준비 등"
 tag:
 - 취준
 comments: true
