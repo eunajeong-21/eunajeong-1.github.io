@@ -77,14 +77,14 @@ Hashing은 '키'를 사용하지 않으며 '단방향'암호화 방식이다.
 - - -
 ## undefined와 null
 ### 1. undefined
-자바 스크립트의 자료형 중 하나로 <hly>선언하지 않은 변수</hly> 또는 <hly>선언 했지만 초기화 하지 않은 변수</hly>를 undifined 자료형 이라고 합니다.  
+자바 스크립트의 자료형 중 하나로 <hly>선언하지 않은 변수</hly> 또는 <hly>선언 했지만 초기화 하지 않은 변수</hly>를 undifined 자료형 이라고 함  
 ~~~
   alert(typeof (variable));
 ~~~
-위와 같은 코드가 실행되면, alert에 undefined 라고 출력이 됩니다.  
+위와 같은 코드가 실행되면, undefined 라고 출력
 * typeof(): 숫자, 문자열, bool 과 같은 자료형을 확인하는 함수  
 
-- 자바스크립트에서 __Boolean(undefined) 는 false__ 이다.
+- 자바스크립트에서 __Boolean(undefined) 는 false__
 
 ### 2. undefined와 null의 차이
 - - -
