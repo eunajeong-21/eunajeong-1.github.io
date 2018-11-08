@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "마크다운 문서에서 목차 만들기"
-date: 2018-10-30
+date: 2018-11-08
 excerpt: "목차 만들기 위한 링크 작성 방법"
 tag:
 - markdown
