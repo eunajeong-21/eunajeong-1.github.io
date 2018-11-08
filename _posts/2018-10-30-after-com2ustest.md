@@ -2,7 +2,7 @@
 layout: post
 title: "[취준] 필기테스트 정리"
 date: 2018-10-30
-excerpt: "틀린문제 and 제대로 위주"
+excerpt: "제대로 못푼 문제 위주"
 tag:
 - 취준
 comments: true
