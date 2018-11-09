@@ -8,10 +8,10 @@ tag:
 comments: true
 ---
 
-Spring의 주요 기능 / 특징
-[1. MVC](#spring-mvc)
-2. DI
-3. AOP
+## Spring의 주요 기능 / 특징
+1. [MVC](#spring-mvc)  
+2. DI  
+3. AOP  
 
 - - -
 
