@@ -62,6 +62,8 @@ int add(inta, intb, int c){}
 - private: 해당 클래스만 접근 가능
 - protected: 해당 클래스와 자손 클래스 & 동일 패키지 내에서 접근가능
 - public: 어떤 클래스라도 접근 가능
+
+
 - - -
 
 # Ajax
