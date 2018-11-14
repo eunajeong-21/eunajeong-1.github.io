@@ -44,9 +44,7 @@ layout: compress
             <h2> CATEGORY </h2>           
             <ul>
                  {% for category in site.categories %} 
-                    {% if category.title != Category %}
                     <li><a href="https://png93.github.io/categories/{{ category.title }}"> {{ category.title }} </a></li>
-                    {% endif %}
                 {% endfor %}
             </ul>
         </div>
