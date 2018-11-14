@@ -119,10 +119,9 @@ body {
 
 /**********************/
 .post_wrapper{
-    display: inline;
     width: 70%;
-    margin-left: 3%;
-    margin-right: 50%;
+    //margin-left: 3%;
+    //margin-right: 50%;
     position: relative;
 	background: $white;
 	color: $color_tuatara;
@@ -137,11 +136,10 @@ body {
 	}
 }
 
-.category_box {
-    display: inline; 
+.category_box { 
     width: 25%;
-    margin-left: 55%;
-    margin-right: 2%;
+    margin-left: 5%;
+    //margin-right: 2%;
     position: relative;
 	background: $white;
 	color: $color_tuatara;
