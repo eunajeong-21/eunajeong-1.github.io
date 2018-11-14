@@ -39,16 +39,16 @@ layout: compress
             </div>
         </div>
         
-        <!-- 카테고리 박스 추가 -->
+        <!-- 카테고리  -->
         <div class = "category_box">
-            <div class="content">
-                <h2 text-align="center"> Category </h2>
+            <h2 text-align="center"> Category </h2>
+                <ul>
                     {% for category in site.categories %} 
-                    <ul>
-                        <a href = "{{ site.url }}{{ category.url }}">{{ category }}</a>
-                    </ul>
+                    <li>
+                        <a href = "{{ site.url }}categories/#{{ category }}">{{ category }}</a>
+                    </li>
                     {% endfor %}
-            </div>
+                </ul>
         </div>
         
     </header>
