@@ -41,8 +41,11 @@ layout: compress
         
         <!-- 카테고리  -->
         <div class="category_box">
+            <h1> CATEGORY </h1>           
             <ul>
-                <li><a href="">카테고리제목</a></li>
+                {% for category in site.categories %}
+                    <li><a href="{{ site.url }}/categories/{{ category }}"> category </a></li>
+                {% endfor %}
             </ul>
         </div>
         
