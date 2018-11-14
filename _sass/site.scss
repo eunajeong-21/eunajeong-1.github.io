@@ -103,8 +103,24 @@ body {
 .wrapper {
 	width: 85%;
 	//max-width: 850px;
-	//margin: 4rem auto;
-    margin-right: 30%;
+	margin: 4rem auto;
+	background: $white;
+	color: $color_tuatara;
+	padding: 2em;
+	border-radius: 3px;
+	box-shadow: 0 0 10px 0 rgba($color_shark,0.3);
+	@include transition(.5s);
+	@media #{$small} {
+		width: 90%;
+		padding: 2em 0;
+	    box-shadow: none;
+	}
+}
+
+.post_wrapper{
+    width: 80%;
+    margin-left: 5%;
+    margin-right: 40%;
     position: relative;
 	background: $white;
 	color: $color_tuatara;
@@ -118,6 +134,8 @@ body {
 	    box-shadow: none;
 	}
 }
+
+
 #disqus_thread {
 	width: 85%;
 	//max-width: 850px;
