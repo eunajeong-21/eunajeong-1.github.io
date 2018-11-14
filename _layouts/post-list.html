@@ -38,6 +38,19 @@ layout: compress
                 </div>
             </div>
         </div>
+        
+        <!-- 카테고리 박스 추가 -->
+        <div class = "category_box animated fadeIn">
+            <div class="content">
+                <h2 text-align="center"> Category </h2>
+                    {% for category in site.categories %} 
+                    <ul>
+                        <a href = "{{ site.url }}{{ category.url }}">{{ category }}</a>
+                    </ul>
+                    {% endfor %}
+            </div>
+        </div>
+        
     </header>
     {% include scripts.html %}
     <script src="{{ site.url }}/assets/js/wow.min.js"></script>
