@@ -137,9 +137,6 @@ body {
 }
 
 .category_box { 
-    width: 25%;
-    margin-left: 5%;
-    //margin-right: 2%;
     position: relative;
 	background: $white;
 	color: $color_tuatara;
@@ -147,6 +144,15 @@ body {
 	border-radius: 3px;
 	box-shadow: 0 0 10px 0 rgba($color_shark,0.3);
 	
+}
+
+.category_header {
+    height: 100%;
+	position: relative;
+	width: 40%;
+	min-height: 300px;
+	text-align: right;
+	color: $white;
 }
 /**********************/
 
