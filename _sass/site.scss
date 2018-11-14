@@ -119,6 +119,7 @@ body {
 
 /**********************/
 .post_wrapper{
+    display: inline;
     width: 70%;
     margin-left: 3%;
     margin-right: 50%;
@@ -137,7 +138,7 @@ body {
 }
 
 .category_box {
-    display: block;
+    display: inline; 
     width: 25%;
     margin-left: 55%;
     margin-right: 2%;
@@ -147,12 +148,7 @@ body {
 	padding: 2em;
 	border-radius: 3px;
 	box-shadow: 0 0 10px 0 rgba($color_shark,0.3);
-	//@include transition(.5s);
-	/*@media #{$small} {
-		width: 90%;
-		padding: 2em 0;
-	    box-shadow: none;
-	}*/
+	
 }
 /**********************/
 
