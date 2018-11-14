@@ -103,7 +103,9 @@ body {
 .wrapper {
 	width: 85%;
 	//max-width: 850px;
-	margin: 4rem auto;
+	//margin: 4rem auto;
+    margin-right: 30%;
+    position: relative;
 	background: $white;
 	color: $color_tuatara;
 	padding: 2em;
