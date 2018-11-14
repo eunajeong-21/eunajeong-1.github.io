@@ -39,22 +39,6 @@ layout: compress
             </div>
         </div>
     </header>
-    
-    <!-- 카테고리  
-    <div class ="category_header">
-        <div class = "category_box">
-            <h2 text-align="center"> Category </h2>
-                <ul>
-                    {% for category in site.categories %} 
-                    <li>
-                        <a class="zoombtn" href = "{{ site.url }}/categories/#{{ category }}">{{ category }}</a>
-                    </li>
-                    {% endfor %}
-                </ul>
-        </div>
-    </div>
-    -->
-    
     {% include scripts.html %}
     <script src="{{ site.url }}/assets/js/wow.min.js"></script>
     <script type="text/javascript">(new WOW).init();</script>
