@@ -2,7 +2,7 @@
 layout: post
 title: "Jekyll 테마에 카테고리 추가하기"
 date: 2018-11-17
-excerpt: "사용중인 지킬 테마에 'category'를 추가해 보았습니다."
+excerpt: "사용중인 지킬 테마에 category를 추가해 보았습니다."
 tag:
 - markdown
 - jekyll
