@@ -119,9 +119,9 @@ body {
 
 /**********************/
 .post_wrapper{
-    float: left;
-    width: 70%;
-    margin-left: 1%;
+    float: right;
+    width: 66%;
+    margin: 2rem 0.5rem;
     position: relative;
 	background: $white;
 	color: $color_tuatara;
@@ -138,8 +138,8 @@ body {
 
 .category_box { 
     float: right;
-    width: 26%;
-    margin-right: 1%;
+    width: 25%;
+    margin: 2rem 0;
 	background: $white;
 	color: $color_tuatara;
 	padding: 2em;
