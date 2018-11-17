@@ -94,7 +94,8 @@ site_categories 에서 카테고리 이름들을 __categories_List__ 라는 변�
 위와 같은 categories/index.html 을 만들어 준 후,  
 _(블로그 주소)/categories/_ 에 접속하면 내가 만들어준 카테고리별로 정리된 페이지가 나옵니다.  
 
-![](https://png93.github.io/assets/img/makecategory/category-index.png)  
+![category-index](/assets/category-index.png)
+{: width="60%"}
 
 
 ## category 레이아웃 만들기
@@ -131,7 +132,8 @@ _(블로그 주소)/categories/_ 에 접속하면 내가 만들어준 카테고�
 맨 처음에 만들었던 categories 폴더에  
 __카테고리 이름과 동일한 이름의 마크다운문서__ 를 추가해 줍니다.
 
-![](https://png93.github.io/assets/img/makecategory1/03.JPG)  
+![03](/assets/03.JPG)
+{: width="60%"}
 
 각 파일은 'YAML 머리말' 의 layout과 title만 가지면 끄읕.
 Algorithm 을 예로 들면 아래와 같이 작성하면 됩니다.
@@ -147,9 +149,12 @@ title: Algorithm
 
 이제 각각의 카테고리는 다음과 같은 페이지를 나타낼 수 있습니다.  
 
-![](https://png93.github.io/assets/img/makecategory1/02.png)
+![02](/assets/02.png)
 
 
 - - -
 
-이상으로 만들고 보니 뿌듯한 카테고리 만들기 설명이었습니다(ㅎㅎ)  
+이상으로 만들고 보니 뿌듯한 카테고리 만들기 설명이었습니다. oohooh  
+여기까지 읽어주신 분들 복받으실거에요. 적게 일하고 많이 버세욧  
+
+다음엔 마지막 사진에서 카테고리 영역을 추가한 짓거리에 대한 글을 냄겨보도록 하겠습니닿ㅎ 그럼20000
