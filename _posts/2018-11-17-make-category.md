@@ -47,7 +47,7 @@ comments: true
 <hly> __categories/index.html__ 파일을 가장 먼저 만들어 주세요~ </hly>  
 그리고 보여주고 싶은 내용을 index.html에 작성해줍니다.  
 
-~~~html
+~~~
 {% capture site_categories %}{% for category in site.categories %}{{ category | first }}{% unless forloop.last %},{% endunless %}{% endfor %}{% endcapture %}
 {% assign categories_list = site_categories | split:',' | sort %}
 ~~~
@@ -67,7 +67,7 @@ site_categories 에서 카테고리 이름들을 __categories_List__ 라는 변�
 그래서 다음 코드를 보면,  
 반복문을 이용해서 <hly>categories_list</hly> 안의 카테고리들을 꺼내 보여주는 작업을 하고 있습니다.
 
-~~~html
+~~~
 <ul class="entry-meta inline-list">
   {% for item in (0..site.categories.size) %}{% unless forloop.last %}
     {% capture this_word %}{{ categories_list[item] | strip_newlines }}{% endcapture %}
@@ -106,7 +106,7 @@ _(블로그 주소)/categories/_ 에 접속하면 내가 만들어준 카테고�
 
 이번엔 post-list.html 의 코드에서 수정이 필요한 부분만 바꿨어용  
 
-~~~html
+~~~
 <div class="post-list">
       {% assign category = page.title %}
       {% for post in site.categories[category] %} <!-- 카테고리 조건 -->
@@ -137,6 +137,7 @@ __카테고리 이름과 동일한 이름의 마크다운문서__ 를 추가해 
 
 각 파일은 'YAML 머리말' 의 layout과 title만 가지면 끄읕.
 Algorithm 을 예로 들면 아래와 같이 작성하면 됩니다.
+
 ~~~
 ---
 
