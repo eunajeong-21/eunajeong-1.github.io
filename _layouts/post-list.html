@@ -53,6 +53,7 @@ layout: compress
                {% for item in (0..site.categories.size) %}{% unless forloop.last %}  
                     {% capture this_word %}{{ categories_list[item] | strip_newlines }}{% endcapture %}
                     <li><a href=" {{site.url}}/categories/{{this_word | strip }} "> {{ this_word }} </a></li>
+                    <br/>
                {% endunless %}{% endfor %}
             </ul>
         </div>
