@@ -5,6 +5,7 @@ date: 2018-11-09
 excerpt: "Spring Framework 요약 정리"
 tag:
 - 취준
+category: [ 취준생활 ]
 comments: true
 ---
 

@@ -1,10 +1,11 @@
 ---
 layout: post
-title: "면접 대비 개념 정리"
+title: "기술 면접 공부"
 date: 2018-11-11
 excerpt: "기술면접 대비 개념 정리"
 tag:
 - 취준
+category: [ 취준생활 ]
 comments: true
 ---
 

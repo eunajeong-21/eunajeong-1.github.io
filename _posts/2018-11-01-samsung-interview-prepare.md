@@ -5,6 +5,7 @@ date: 2018-11-01
 excerpt: "예상 질문 - 답변준비 등"
 tag:
 - 취준
+category: [ 취준생활 ]
 comments: true
 ---
 

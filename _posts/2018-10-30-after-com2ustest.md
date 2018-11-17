@@ -5,6 +5,7 @@ date: 2018-10-30
 excerpt: "제대로 못푼 문제 위주"
 tag:
 - 취준
+category: [ 취준생활 ]
 comments: true
 ---
 

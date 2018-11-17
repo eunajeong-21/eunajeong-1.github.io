@@ -5,6 +5,7 @@ date: 2018-10-26
 excerpt: "데이터베이스, 통신, 알고리즘 등"
 tag:
 - 취준
+category: [ 취준생활 ]
 comments: true
 ---
 

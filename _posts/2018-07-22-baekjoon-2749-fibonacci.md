@@ -6,6 +6,7 @@ excerpt: "피사노 주기를 이용하여 N번째 피보나치 수를 1,000,000
 tag:
 - Baekjoon
 - Fibonacci
+category: [ 백준 문제풀이 ]
 feature: https://png93.github.io/assets/img/title/algorithm.jpg
 comments: true
 ---

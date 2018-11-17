@@ -1,10 +1,11 @@
 ---
 layout: post
-title: "[취준] 2018 하반기 삼성전자 sw역량테스트를 보고 난 후"
+title: "2018 하반기 삼성전자 sw역량테스트를 보고 난 후"
 date: 2018-10-21
 excerpt: "..."
 tag:
 - 취준
+category: [ 조잘조잘 ]
 comments: true
 ---
 

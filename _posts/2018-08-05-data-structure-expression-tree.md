@@ -6,6 +6,7 @@ excerpt: "수식 트리를 만드는 방법"
 tag:
 - Datastructure
 - Algorithm
+category: [ Algorithm ]
 feature: https://png93.github.io/assets/img/title/data_structure.jpg
 comments: true
 ---

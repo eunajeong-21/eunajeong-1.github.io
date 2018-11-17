@@ -6,6 +6,7 @@ excerpt: "이진 트리의 특징과 세 가지 순회 방법 알아보기"
 tag:
 - Datastructure
 - Algorithm
+category: [ DataStructure, Algorithm ]
 feature: https://png93.github.io/assets/img/title/data_structure.jpg
 comments: true
 ---
