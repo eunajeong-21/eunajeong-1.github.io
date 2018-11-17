@@ -120,8 +120,8 @@ body {
 /**********************/
 .post_wrapper{
     float: right;
-    width: 66%;
-    margin: 2rem 0.5rem;
+    width: 70%;
+    margin: 2rem 1rem;
     position: relative;
 	background: $white;
 	color: $color_tuatara;
@@ -137,14 +137,19 @@ body {
 }
 
 .category_box { 
-    float: right;
+    position: fixed;
+    top: 8rem;
+    left: 1rem;
     width: 25%;
-    margin: 2rem 0;
 	background: $white;
 	color: $color_tuatara;
 	padding: 2em;
 	border-radius: 3px;
 	box-shadow: 0 0 10px 0 rgba($color_shark,0.3);
+    
+    @media #{$small} {
+		visibility: hidden;
+	}
 }
 
 /**********************/
