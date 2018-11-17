@@ -94,7 +94,7 @@ site_categories 에서 카테고리 이름들을 __categories_List__ 라는 변�
 위와 같은 categories/index.html 을 만들어 준 후,  
 _(블로그 주소)/categories/_ 에 접속하면 내가 만들어준 카테고리별로 정리된 페이지가 나옵니다.  
 
-![](https://png93.github.io/assets/img/make-category/01.png)
+![01](https://png93.github.io/assets/img/make-category/01.png)
 
 
 
@@ -132,7 +132,7 @@ _(블로그 주소)/categories/_ 에 접속하면 내가 만들어준 카테고�
 맨 처음에 만들었던 categories 폴더에  
 __카테고리 이름과 동일한 이름의 마크다운문서__ 를 추가해 줍니다.
 
-![03](/assets/03.JPG)
+![03](https://png93.github.io/assets/img/make-category/03.JPG)
 {: width="60%"}
 
 각 파일은 'YAML 머리말' 의 layout과 title만 가지면 끄읕.
@@ -149,7 +149,7 @@ title: Algorithm
 
 이제 각각의 카테고리는 다음과 같은 페이지를 나타낼 수 있습니다.  
 
-![02](/assets/02.png)
+![02](https://png93.github.io/assets/img/make-category02.png)
 
 
 - - -
