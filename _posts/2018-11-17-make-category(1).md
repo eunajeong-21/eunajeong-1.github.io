@@ -94,8 +94,8 @@ site_categories 에서 카테고리 이름들을 __categories_List__ 라는 변�
 위와 같은 categories/index.html 을 만들어 준 후,  
 _(블로그 주소)/categories/_ 에 접속하면 내가 만들어준 카테고리별로 정리된 페이지가 나옵니다.  
 
-![category-index](png93.github.io/assets/img/makecategory/category-index.png)
-{: width="60%"}
+![category-index](https://png93.github.io/assets/img/makecategory/category-index.png)
+
 
 
 ## category 레이아웃 만들기
