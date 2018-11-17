@@ -5,7 +5,7 @@ date: 2018-07-22
 excerpt: "피보나치 함수의 호출 횟수 구하기"
 tag: [Baekjoon, Fibonacci]
 category: [ 백준 문제풀이 ]
-feature: https://png93.github.io/assets/img/title/blue-cube.jpg
+feature: https://png93.github.io/assets/img/title/bj_title.jpg
 comments: true
 ---
 

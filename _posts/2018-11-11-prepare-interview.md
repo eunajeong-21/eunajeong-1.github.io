@@ -6,6 +6,7 @@ excerpt: "기술면접 대비 개념 정리"
 tag:
 - 취준
 category: [ 취준생활 ]
+feature: https://png93.github.io/assets/img/title/basic.jpg
 comments: true
 ---
 

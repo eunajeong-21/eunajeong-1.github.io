@@ -6,6 +6,7 @@ excerpt: "데이터베이스, 통신, 알고리즘 등"
 tag:
 - 취준
 category: [ 취준생활 ]
+feature: https://png93.github.io/assets/img/title/basic.jpg
 comments: true
 ---
 

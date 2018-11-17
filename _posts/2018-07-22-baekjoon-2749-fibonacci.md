@@ -7,7 +7,7 @@ tag:
 - Baekjoon
 - Fibonacci
 category: [ 백준 문제풀이 ]
-feature: https://png93.github.io/assets/img/title/algorithm.jpg
+feature: https://png93.github.io/assets/img/title/bj_title.jpg
 comments: true
 ---
 

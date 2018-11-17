@@ -6,6 +6,7 @@ excerpt: "제대로 못푼 문제 위주"
 tag:
 - 취준
 category: [ 취준생활 ]
+feature: https://png93.github.io/assets/img/title/basic.jpg
 comments: true
 ---
 

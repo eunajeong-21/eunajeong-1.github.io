@@ -6,6 +6,7 @@ excerpt: "..."
 tag:
 - 취준
 category: [ 조잘조잘 ]
+feature: https://png93.github.io/assets/img/title/basic.jpg
 comments: true
 ---
 

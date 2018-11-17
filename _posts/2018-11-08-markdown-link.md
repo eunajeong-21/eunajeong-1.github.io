@@ -6,6 +6,7 @@ excerpt: "목차 만들기 위한 링크 작성 방법"
 tag:
 - markdown
 category: [ Jekyll 블로그 ]
+feature: https://png93.github.io/assets/img/title/basic.jpg
 comments: true
 ---
 목차를 만들 때 마크다운 문법 중

@@ -6,7 +6,7 @@ excerpt: "jekyll테마에 포함되어 있던 diqus 플러그인을 사용하기
 tag:
 - Disqus
 category: [ Jekyll 블로그 ]
-feature: https://png93.github.io/assets/img/title/title_basic.jpg
+feature: https://png93.github.io/assets/img/title/basic.jpg
 comments: true
 ---
 

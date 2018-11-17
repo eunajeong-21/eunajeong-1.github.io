@@ -7,7 +7,7 @@ tag:
 - Datastructure
 - Algorithm
 category: [ DataStructure ]
-feature: https://png93.github.io/assets/img/title/data_structure.jpg
+feature: https://png93.github.io/assets/img/title/lego.jpg
 comments: true
 ---
 

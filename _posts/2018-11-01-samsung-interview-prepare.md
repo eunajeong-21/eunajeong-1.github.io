@@ -6,6 +6,7 @@ excerpt: "예상 질문 - 답변준비 등"
 tag:
 - 취준
 category: [ 취준생활 ]
+feature: https://png93.github.io/assets/img/title/basic.jpg
 comments: true
 ---
 
