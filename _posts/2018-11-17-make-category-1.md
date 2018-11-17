@@ -6,7 +6,7 @@ excerpt: "사용중인 지킬 테마에 'category'를 추가해 보았습니다.
 tag:
 - markdown
 - jekyll
-category: [Jekyll 블로그]
+category: [ Jekyll 블로그 ]
 feature: https://png93.github.io/assets/img/title/basic.jpg
 comments: true
 ---
@@ -19,7 +19,7 @@ comments: true
 [지킬 공식 페이지의 카테고리 설명](https://jekyllrb-ko.github.io/docs/posts/#%ED%8F%AC%EC%8A%A4%ED%8A%B8%EC%9D%98-%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EC%99%80-%ED%83%9C%EA%B7%B8-%ED%91%9C%EC%8B%9C%ED%95%98%EA%B8%B0)  
 {: .notice}
 
-[참고한 블로그](https://devyurim.github.io/development%20environment/github%20blog/2018/08/07/blog-6.html)
+[참고한 블로그](https://devyurim.github.io/development%20environment/github%20blog/2018/08/07/blog-6.html)  
 {: .notice}
 
 
