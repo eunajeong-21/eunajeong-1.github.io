@@ -90,7 +90,7 @@ _markdown 문서의 파일 이름은 `YYYY-MM-DD-제목.md` 의 형식을 지켜
 
 참고로 git add와 git commit이 명령을 수행하는 단계가 있는데, 아래 그림처럼 동작합니다.
 
-![](../assets/img/post/gitlayer.png){: width="50%"}
+![](../assets/img/post/gitlayer.png){: width="60%" height="60%"}
 
 이제 명령어들을 차례대로 볼께요.
 
