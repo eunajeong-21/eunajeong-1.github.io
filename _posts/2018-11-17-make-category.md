@@ -42,7 +42,7 @@ comments: true
 
 ## categories 폴더에 index 페이지 생성하기
 
-<hly> __categories/index.html__ 파일을 가장 먼저 만들어 주세요~ </hly>  
+__<hly> categories/index.html 파일을 가장 먼저 만들어 주세요~ </hly>__  
 그리고 보여주고 싶은 내용을 index.html에 작성해줍니다.  
 
 {% highlight html %}
