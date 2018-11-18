@@ -76,7 +76,8 @@ site_categories 에서 카테고리 이름들을 categories_List 라는 변수�
   {% for item in (0..site.categories.size) %}{% unless forloop.last %}
     {% capture this_word %}{{ categories_list[item] | strip_newlines }}{% endcapture %}
   	<li><a href="#{{ this_word }}" class="tag">
-    <span class="term">{{ this_word }}</span> <span class="count">{{ site.categories[this_word].size }}</span>
+    <span class="term">{{ this_word }}</span>
+    <span class="count">{{ site.categories[this_word].size }}</span>
     </a></li>
   {% endunless %}{% endfor %}
 </ul>
@@ -109,7 +110,7 @@ site_categories 에서 카테고리 이름들을 categories_List 라는 변수�
 
 다음으로 카테고리별로 포스트 목록을 보여주는 페이지를 만들기 위해서  
 
-<hly>Jekyll 테마의 디렉토리 중 _layouts 폴더에 category.html을 만들어 줍니다!</hly>  
+<hly>Jekyll 테마의 디렉토리 중 \_layouts 폴더에 category.html을 만들어 줍니다!</hly>  
 
 이번엔 지킬 테마에 있던 `_layouts/post-list.html`을 사용하여 필요한 부분만 수정했어용  
 
@@ -132,7 +133,7 @@ site_categories 에서 카테고리 이름들을 categories_List 라는 변수�
 __따라서 category 레이아웃을 사용하는 page의 title은 카테고리와 동일하게 설정해야 합니다.__  
 
 
-<kbd>{% for post in site.categories[category] %}</kbd>  
+<kbd>{% for post in site.categories[category] %}{% endfor %}</kbd>  
 여기선 위에서 얻어온 category와 동일한 category를 가지는 post 들만 뽑아오게 됩니다.  
 
 - - -
@@ -156,7 +157,7 @@ Algorithm 을 예로 들면 아래와 같이 작성하면 됩니다.
 
 {% raw %}
 ---
-layout: category
+layout: category  
 title: Algorithm
 ---
 {% endraw %}
