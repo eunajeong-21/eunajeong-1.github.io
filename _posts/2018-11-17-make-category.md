@@ -14,16 +14,14 @@ comments: true
 
 현재 사용중인 지킬 테마를 선택할 때, 태그 기능이 깔끔하게 구현되어 있었기 때문에 "오 이거 카테고리로 이용하면 되겠다!" 라는 생각에 Fork하여 사용하게 되었는데요.  
 
-아직까진 tag만 사용하다가, 글이 더 많아지기 전에 카테고리를 만들어 놓는게 좋겠다 싶어서 여기저기 참고하며 만들어 보았습니다.  
+아직까진 tag만 사용하다가, 글이 더 많아 지기 전에 카테고리를 만들어 놓는게 좋겠다 싶어서 여기저기 참고하며 만들어 보았습니다.  
 
 [지킬 공식 페이지의 카테고리 설명](https://jekyllrb-ko.github.io/docs/posts/#%ED%8F%AC%EC%8A%A4%ED%8A%B8%EC%9D%98-%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%EC%99%80-%ED%83%9C%EA%B7%B8-%ED%91%9C%EC%8B%9C%ED%95%98%EA%B8%B0)  
-{: .notice}
-
 [참고한 블로그](https://devyurim.github.io/development%20environment/github%20blog/2018/08/07/blog-6.html)  
 {: .notice}
 
 
-만들면서 느낀 점을 말하자면,  
+만들면서 느낀 점을 미리 말하자면,  
 코드 부분은 사용하는 지킬 테마에서 뽑아오거나, 간단하게 만들수 있기 때문에  
 지킬의 __디렉토리 구조__ 를 이해하는게 제일 중요한 것 같아요!
 
@@ -31,8 +29,8 @@ comments: true
 # 카테고리 만든 과정
 
 1. [categories 폴더와 index 페이지 만들기](#categories-폴더에-index-페이지-생성하기)
-2. [category 레이아웃 만들기](#category-레이아웃-만들기)
-  2-1. [layout이 category인 마크다운문서 만들기](#layout이-category인-마크다운문서-만들기)
+2. [category 레이아웃 만들기](#category-레이아웃-만들기)  
+    2-1. [layout이 category인 마크다운문서 만들기](#layout이-category인-마크다운문서-만들기)
 
 ## 미리 요약
 1. categories/index.html 만들기
@@ -44,7 +42,7 @@ comments: true
 
 ## categories 폴더에 index 페이지 생성하기
 
-<hly> __`categories/index.html`__ 파일을 가장 먼저 만들어 주세요~ </hly>  
+<hly> __categories/index.html__ 파일을 가장 먼저 만들어 주세요~ </hly>  
 그리고 보여주고 싶은 내용을 index.html에 작성해줍니다.  
 
 {% highlight html %}
@@ -65,48 +63,53 @@ comments: true
 [Liquid 사이트](http://shopify.github.io/liquid/)  
 {: .notice}
 
-아무튼 저 코드는 <hly>__site.categories__ 의 정보를 __site_categories__ 라는 변수에 담고,  
-site_categories 에서 카테고리 이름들을 __categories_List__ 라는 변수에 담는 일을 하는구나~</hly> 정도로 이해했습니다.  
+아무튼 저 코드는 <hly> site.categories 의 정보를 site_categories 라는 변수에 담고,  
+site_categories 에서 카테고리 이름들을 **categories_List** 라는 변수에 담는 일을 하는구나~</hly> 정도로 이해했습니다.  
 
 그래서 다음 코드를 보면,  
 반복문을 이용해서 <hly>categories_list</hly> 안의 카테고리들을 꺼내 보여주는 작업을 하고 있습니다.
 
 {% highlight html %}
 {% raw %}
+
 <ul class="entry-meta inline-list">
   {% for item in (0..site.categories.size) %}{% unless forloop.last %}
     {% capture this_word %}{{ categories_list[item] | strip_newlines }}{% endcapture %}
-  	<li><a href="#{{ this_word }}" class="tag"><span class="term">{{ this_word }}</span> <span class="count">{{ site.categories[this_word].size }}</span></a></li>
+  	<li><a href="#{{ this_word }}" class="tag">
+    <span class="term">{{ this_word }}</span> <span class="count">{{ site.categories[this_word].size }}</span>
+    </a></li>
   {% endunless %}{% endfor %}
 </ul>
+
 {% for item in (0..site.categories.size) %}{% unless forloop.last %}
   {% capture this_word %}{{ categories_list[item] | strip_newlines }}{% endcapture %}
-	<article>
-	  <a href="{{site.url}}/categories/{{this_word}}">
-    <h2 id="{{ this_word }}" class="tag-heading">{{ this_word }}</h2>
-    </a>
-	  <ul>
-      {% for post in site.categories[this_word] %}{% if post.title != null %}
+  <article>
+	  <a href="{{site.url}}/categories/{{this_word}}"><h2 id="{{ this_word }}" class="tag-heading">{{ this_word }}</h2></a>
+    <ul>
+    {% for post in site.categories[this_word] %}{% if post.title != null %}
       <li class="entry-title"><a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
-      {% endif %}{% endfor %}
+    {% endif %}{% endfor %}
 		</ul>
-	</article><!-- /.hentry -->
+    </article><!-- /.hentry -->
 {% endunless %}{% endfor %}
+
 {% endraw %}
 {% endhighlight %}
 
 위와 같은 categories/index.html 을 만들어 준 후,  
-`png93.ginhub.io/categories/` 에 접속하면 내가 만들어준 카테고리별로 정리된 페이지가 나옵니다.  
+`https://png93.ginhub.io/categories/` 에 접속하면 내가 만들어준 카테고리별로 정리된 페이지가 나옵니다.  
 
-![01](https://png93.github.io/assets/img/make-category/01.png)
+<figure>
+    <img src="https://png93.github.io/assets/img/make-category/01.png">
+</figure>
 
-
+- - -
 
 ## category 레이아웃 만들기
 
 다음으로 카테고리별로 포스트 목록을 보여주는 페이지를 만들기 위해서  
 
-<hly>Jekyll 테마의 디렉토리 중 `_layouts` 폴더에 `category.html`을 만들어 줍니다!</hly>  
+<hly>Jekyll 테마의 디렉토리 중 _layouts 폴더에 category.html을 만들어 줍니다!</hly>  
 
 이번엔 지킬 테마에 있던 `_layouts/post-list.html`을 사용하여 수정이 필요한 부분만 바꿨어용  
 
@@ -143,10 +146,13 @@ __따라서 category 레이아웃을 사용하는 page의 title은 카테고리�
 레이아웃을 만들었으니 사용을 해야겠죠!:)  
 
 맨 처음에 만들었던 categories 폴더에  
-__카테고리 이름과 동일한 이름의 마크다운문서__ 를 추가해 줍니다.
+__카테고리 이름과 동일한 이름의 마크다운문서__ 를 추가해 줍니다. <hlr>(★x1000)</hlr>
 
-![03](https://png93.github.io/assets/img/make-category/03.JPG)
-{: width="60%"}
+<figure>
+    <img src="https://png93.github.io/assets/img/make-category/03.JPG">
+    <figcaption>categories 디렉토리 모습</figcaption>
+</figure>
+
 
 각 파일은 'YAML 머리말' 의 layout과 title만 가지면 끄읕.
 Algorithm 을 예로 들면 아래와 같이 작성하면 됩니다.
@@ -158,15 +164,15 @@ title: Algorithm
 ---
 ~~~
 
+이제 각각의 카테고리는 `/categories/(카테고리명)`과 같은 url에서 다음과 같은 페이지를 나타냅니다.  
 
-이제 각각의 카테고리는 다음과 같은 페이지를 나타낼 수 있습니다.  
-
-![02](https://png93.github.io/assets/img/make-category02.png)
-
+<figure>
+    <img src="https://png93.github.io/assets/img/make-category/02.png">
+    <figcaption>"백준 문제풀이" 카테고리 화면.</figcaption>
+</figure>
 
 - - -
 
-이상으로 별거 아닌데 만들면 뿌듯한 카테고리 만들기 설명이었습니다. ohoh  
-여기까지 읽어주신 분들 복받으실거에요. 적게 일하고 많이 버세욧  
+이상으로 별거 아닌데 만들면 뿌듯한 카테고리 만들기 설명이었습니다. ohoh   
 
 다음엔 마지막 사진에서 카테고리 영역을 어떻게 추가했는지 남겨 보도록 하겠습니다! 그럼20000
