@@ -129,15 +129,15 @@ site_categories 에서 카테고리 이름들을 categories_List 라는 변수�
 
 <br/>
 
-{% raw %}
+~~~
 {% assign category = page.title %}
-{% endraw %}  
+~~~
 위 코드는 현재 페이지의 title을 category 라는 변수에 할당하는 일을 합니다.  
 __따라서 category 레이아웃을 사용하는 page의 title은 카테고리와 동일하게 설정해야 합니다.__  
 
-{% raw %}
+~~~
 {% for post in site.categories[category] %}{% endfor %}
-{% endraw %}  
+~~~
 여기선 위에서 얻어온 category와 동일한 category를 가지는 post 들만 뽑아오게 됩니다.  
 
 - - -
