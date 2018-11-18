@@ -27,16 +27,25 @@ comments: true
 
 아무튼, 이 글에서는 github 블로그를 관리할 때 필요한 아주아주 기초적인 git 사용법을 정리해 보겠습니다 :)
 
-- - -
 
+---
+## contents
+1. [초기설정](#초기설정-init-config-clone)
+2. [변경사항 반영하기](#pull-add-commit-push)
+3. [파일 삭제하기](#삭제-명령어-rm)
+4. [기타 명령어](#그-외-명령어)
+---
 
-## 1. 한 번만 하면 되는 "초기 설정"
+## 초기설정 init config clone
 
 사용할 jekyll테마를 내 github으로 복사하면서 저장소가 만들어진 상태였기 때문에, 컴퓨터에 작업할 디렉토리를 생성하는 것부터 시작했습니다.
 
-D:\gitblog 폴더를 만들고, '여기에서 파일을 올리고 내려받고 이것저것 할거야' 라고 지정해 주었어요. git-bash를 실행한 후 아래의 순서대로 명령어를 입력 해주면 됩니다.
+저는 `D:\gitblog` 폴더를 만들고, '여기에서 파일을 올리고 내려받고 이것저것 할거야' 라고 지정해 주었어요.  
+git-bash를 실행한 후 아래의 순서대로 명령어를 입력 해주면 됩니다.
 
-![git-init](https://png93.github.io/assets/img/post/git-bash_initial_commands.jpg)
+<figure>
+  <img src = "https://png93.github.io/assets/img/post/git-bash_initial_commands.jpg">
+</figure>
 
 차례대로 명령어들을 살펴볼께요.
 
@@ -50,47 +59,39 @@ D:\gitblog 폴더를 만들고, '여기에서 파일을 올리고 내려받고 �
 
 <kbd>git clone "Repository 주소"</kbd>  : 원격 저장소를 현재 로컬 디렉토리로 복사.
 
-Repository 주소는 내 저장소 상단 오른쪽에 보면, 'Clone or download'라는 초록색 버튼이 있는데 여기서 복사 해올 수 있어요.
+Repository 주소는 내 저장소 상단 오른쪽에 보면, 'Clone or download'라는 초록색 버튼이 있는데 여기서 복사 해올 수 있습니다.
 
 여기까지 완료했다면 기본적인 설정은 끝낸거라고 보면 됩니다.     
 
 - - -
 
-## 2. github 저장소 변경 사항 가져오기 & 파일 github 저장소에 올리기
+## pull add commit push
 
-블로그를 만들고 git으로 원격 저장소와 로컬(내 컴퓨터)을 연결 해 주었으니 이제  글을 써서 올려볼거에요.
+블로그를 만들고 git으로 원격 저장소와 로컬(내 컴퓨터)을 연결 해 주었으니 이제  글을 써서 올려보겠습니다.
 
 
 jekyll로 만든 블로그는 **markdown** 이라는 형식을 지원하는데,
 css나 html처럼 원하는 형식을 지정해주면서 글을 써내려 갈 수 있습니다.
 
-처음 접하는 형식이지만, 어려운 건 없어서 사용하다보면 금방 익숙해 질 수 있습니다!
+처음 접하는 형식이지만, 어려운 건 없어서 사용하다보면 금방 익숙해 질 것 같네요ㅎㅎ
 
 참고로 저는 markdown 편집기로 Atom을 설치했습니다.
 [Atom 홈페이지](https://atom.io/) 에 들어가면 무료로 다운 받을 수 있어용
 
-1번 과정을 완료하고, markdown 문서 또는 다른 새로운 파일이 준비 되었다면 다음과 같은 방법으로 원격 저장소에 반영할 수 있습니다.
-
-
-_markdown 문서의 파일 이름은 YYYY-MM-DD-제목.md 의 형식을 지켜 주어야 합니다._
-
-
+_markdown 문서의 파일 이름은 `YYYY-MM-DD-제목.md` 의 형식을 지켜 주어야 합니다._  
+{: .notice}
 
 
 **▼원격 저장소에 새로운 파일 올리기 ▼**
-
-![git-upload](https://png93.github.io/assets/img/post/git_upload_commands.PNG)
+<figure>
+  <img src = "https://png93.github.io/assets/img/post/git_upload_commands.PNG">
+</figure>
 
 참고로 git add와 git commit이 명령을 수행하는 단계가 있는데, 아래 그림처럼 동작합니다.
 
-<center><img src = "https://png93.github.io/assets/img/post/git layer.png" width="400"/></center>
-
-<<<<<<< HEAD
-<br>
-=======
+<center><img src = "https://png93.github.io/assets/img/post/git layer.png" width="60%"/></center>
 
 <br/>
->>>>>>> bfe8ac2acc7f7619389a47c6daf100f2e86b2f90
 
 이제 명령어들을 차례대로 볼께요.
 
@@ -110,31 +111,34 @@ _markdown 문서의 파일 이름은 YYYY-MM-DD-제목.md 의 형식을 지켜 �
 
 <kbd>git push -u origin master</kbd>  :  원격 저장소에 저장.
 
-- - -
-## 3. 폴더 또는 파일 삭제 하기
+---
+
+## 삭제 명령어 rm
 
 삭제는 `$git rm` 명령어를 사용합니다.
 
-알아둘 점이 있다면, `$git rm`은 원격 저장소와 로컬의 폴더 또는 파일을 모두 삭제하고, `$git rm --cached` 속성을 사용하면 '원격 저장소에서만' 삭제 됩니다.
+알아둘 점이 있다면, `$git rm`은 원격 저장소와 로컬의 폴더 또는 파일을 모두 삭제하고,  
+`$git rm --cached` 속성을 사용하면 __원격 저장소에서만__ 삭제 됩니다.
 
 예를 들어 github 저장소에 \_posts/test 라는 폴더를 삭제하려면 다음 명령어들을 입력하면 됩니다.
 
-
-<center><img src = "../assets/img/post/git_remove_commands.PNG" width="500"/></center>
-<br/>
+<figure>
+  <img src = "../assets/img/post/git_remove_commands.PNG"/>
+</figure>
 
 파일 삭제는 원격 저장소에서만 삭제 하려면 `$git rm --cached <파일이름>`
-
 원격 저장소와 로컬 두 곳 모두 삭제하려면  `$git rm <파일이름>`
+{: .notice}
 
 
-
-- - -
+---
 
 ## 그 외 명령어
 
-<kbd>git remote add origin https://github.com/png93/png93.github.io </kbd>  :  github 저장소와 연결하기 (초기설정)
+<kbd>git remote add origin `https://github.com/png93/png93.github.io` </kbd>  :  github 저장소와 연결하기 (초기설정)  
 
-<kbd>git remote -v</kbd>  : 연결된 원격 저장소 확인
+<kbd>git remote -v</kbd>  : 연결된 원격 저장소 확인  
 
-<kbd>git status</kbd>  :  현재 상태 확인
+<kbd>git status</kbd>  :  현재 상태 확인  
+
+<kbd>:wq</kbd>  : Vim 편집기 화면에서 EXIT
