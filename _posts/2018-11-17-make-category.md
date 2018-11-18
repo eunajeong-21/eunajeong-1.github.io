@@ -97,7 +97,7 @@ site_categories 에서 카테고리 이름들을 categories_List 라는 변수�
 {% endhighlight %}
 
 위와 같은 categories/index.html 을 만들어 준 후,  
-`https://png93.ginhub.io/categories/` 에 접속하면 내가 만들어준 카테고리별로 정리된 페이지가 나옵니다.  
+`https://png93.github.io/categories/` 에 접속하면 내가 만들어준 카테고리별로 정리된 페이지가 나옵니다.  
 
 <figure>
     <img src="https://png93.github.io/assets/img/make-category/01.png">
