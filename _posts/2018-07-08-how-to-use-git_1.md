@@ -27,13 +27,14 @@ comments: true
 
 아무튼, 이 글에서는 github 블로그를 관리할 때 필요한 아주아주 기초적인 git 사용법을 정리해 보겠습니다 :)
 
-
 ---
+
 ## contents
 1. [초기설정](#초기설정-init-config-clone)
 2. [변경사항 반영하기](#pull-add-commit-push)
 3. [파일 삭제하기](#삭제-명령어-rm)
 4. [기타 명령어](#그-외-명령어)
+
 ---
 
 ## 초기설정 init config clone
