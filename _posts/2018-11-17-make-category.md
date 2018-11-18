@@ -44,15 +44,19 @@ comments: true
 
 ## categories 폴더에 index 페이지 생성하기
 
-<hly> __categories/index.html__ 파일을 가장 먼저 만들어 주세요~ </hly>  
+<hly> __`categories/index.html`__ 파일을 가장 먼저 만들어 주세요~ </hly>  
 그리고 보여주고 싶은 내용을 index.html에 작성해줍니다.  
 
-~~~
+{% highlight html %}
+{% raw %}
+
 {% capture site_categories %}{% for category in site.categories %}{{ category | first }}{% unless forloop.last %},{% endunless %}{% endfor %}{% endcapture %}
 {% assign categories_list = site_categories | split:',' | sort %}
-~~~
 
-위 코드는 tags/index.html의 코드를 재사용한 categories/index.html의 일부 인데요, tags 부분을 categories로 바꿔주었습니다.  
+{% endraw %}
+{% endhighlight %}
+
+위 코드는 `tags/index.html`의 코드를 재사용한 `categories/index.html`의 일부 인데요, tags 부분을 categories로 바꿔주었습니다.  
 
 처음엔 이게 당최 무슨 언어인가 했는데, 'Liquid' 라는 언어라고 합니다.. 액체 언어... 처음 들었어요..ㅎㅎ  
 
@@ -67,32 +71,32 @@ site_categories 에서 카테고리 이름들을 __categories_List__ 라는 변�
 그래서 다음 코드를 보면,  
 반복문을 이용해서 <hly>categories_list</hly> 안의 카테고리들을 꺼내 보여주는 작업을 하고 있습니다.
 
-~~~
+{% highlight html %}
+{% raw %}
 <ul class="entry-meta inline-list">
   {% for item in (0..site.categories.size) %}{% unless forloop.last %}
     {% capture this_word %}{{ categories_list[item] | strip_newlines }}{% endcapture %}
   	<li><a href="#{{ this_word }}" class="tag"><span class="term">{{ this_word }}</span> <span class="count">{{ site.categories[this_word].size }}</span></a></li>
   {% endunless %}{% endfor %}
 </ul>
-
 {% for item in (0..site.categories.size) %}{% unless forloop.last %}
   {% capture this_word %}{{ categories_list[item] | strip_newlines }}{% endcapture %}
 	<article>
 	  <a href="{{site.url}}/categories/{{this_word}}">
-     <h2 id="{{ this_word }}" class="tag-heading">{{ this_word }}</h2>
+    <h2 id="{{ this_word }}" class="tag-heading">{{ this_word }}</h2>
     </a>
-	    <ul>
-    {% for post in site.categories[this_word] %}{% if post.title != null %}
+	  <ul>
+      {% for post in site.categories[this_word] %}{% if post.title != null %}
       <li class="entry-title"><a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
-    {% endif %}{% endfor %}
+      {% endif %}{% endfor %}
 		</ul>
 	</article><!-- /.hentry -->
 {% endunless %}{% endfor %}
-~~~
-
+{% endraw %}
+{% endhighlight %}
 
 위와 같은 categories/index.html 을 만들어 준 후,  
-_(블로그 주소)/categories/_ 에 접속하면 내가 만들어준 카테고리별로 정리된 페이지가 나옵니다.  
+`png93.ginhub.io/categories/` 에 접속하면 내가 만들어준 카테고리별로 정리된 페이지가 나옵니다.  
 
 ![01](https://png93.github.io/assets/img/make-category/01.png)
 
@@ -102,11 +106,12 @@ _(블로그 주소)/categories/_ 에 접속하면 내가 만들어준 카테고�
 
 다음으로 카테고리별로 포스트 목록을 보여주는 페이지를 만들기 위해서  
 
-<hly>Jekyll 테마의 디렉토리 중 \_layouts 폴더에 category.html을 만들어 줍니다!</hly>  
+<hly>Jekyll 테마의 디렉토리 중 `_layouts` 폴더에 `category.html`을 만들어 줍니다!</hly>  
 
-이번엔 post-list.html 의 코드에서 수정이 필요한 부분만 바꿨어용  
+이번엔 지킬 테마에 있던 `_layouts/post-list.html`을 사용하여 수정이 필요한 부분만 바꿨어용  
 
-~~~
+{% highlight html %}
+{% raw %}
 <div class="post-list">
       {% assign category = page.title %}
       {% for post in site.categories[category] %} <!-- 카테고리 조건 -->
@@ -115,13 +120,21 @@ _(블로그 주소)/categories/_ 에 접속하면 내가 만들어준 카테고�
             </ul>
       {% endfor %}
 </div>
-~~~
+{% endraw %}
+{% endhighlight %}
 
+
+{% raw %}
 {% assign category = page.title %}  
-바로 다음에 설명하겠지만, category 레이아웃을 사용하는 page의 title은 카테고리와 동일하게 설정해야 합니다.  
-위 코드는 현재 페이지의 title을 category 라는 변수에 할당하는 일을 합니다.  
+{% endraw %}
 
+위 코드는 현재 페이지의 title을 category 라는 변수에 할당하는 일을 합니다.  
+__따라서 category 레이아웃을 사용하는 page의 title은 카테고리와 동일하게 설정해야 합니다.__  
+
+{% raw %}
 {% for post in site.categories[category] %}  
+{% endraw %}
+
 여기선 위에서 얻어온 category와 동일한 category를 가지는 post 들만 뽑아오게 됩니다.  
 
 
@@ -140,10 +153,8 @@ Algorithm 을 예로 들면 아래와 같이 작성하면 됩니다.
 
 ~~~
 ---
-
 layout: category
 title: Algorithm
-
 ---
 ~~~
 
@@ -155,7 +166,7 @@ title: Algorithm
 
 - - -
 
-이상으로 만들고 보니 뿌듯한 카테고리 만들기 설명이었습니다. oohooh  
+이상으로 별거 아닌데 만들면 뿌듯한 카테고리 만들기 설명이었습니다. ohoh  
 여기까지 읽어주신 분들 복받으실거에요. 적게 일하고 많이 버세욧  
 
-다음엔 마지막 사진에서 카테고리 영역을 추가한 짓거리에 대한 글을 냄겨보도록 하겠습니닿ㅎ 그럼20000
+다음엔 마지막 사진에서 카테고리 영역을 어떻게 추가했는지 남겨 보도록 하겠습니다! 그럼20000
