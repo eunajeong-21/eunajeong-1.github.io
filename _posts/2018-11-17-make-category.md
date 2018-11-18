@@ -64,10 +64,10 @@ comments: true
 {: .notice}
 
 아무튼 저 코드는 <hly> site.categories 의 정보를 site_categories 라는 변수에 담고,  
-site_categories 에서 카테고리 이름들을 **categories_List** 라는 변수에 담는 일을 하는구나~</hly> 정도로 이해했습니다.  
+site_categories 에서 카테고리 이름들을 categories_List 라는 변수에 담는 일을 하는구나~</hly> 정도로 이해했습니다.  
 
 그래서 다음 코드를 보면,  
-반복문을 이용해서 <hly>categories_list</hly> 안의 카테고리들을 꺼내 보여주는 작업을 하고 있습니다.
+반복문을 이용해서 **<hly>categories_list</hly>** 안의 카테고리들을 꺼내 보여주는 작업을 하고 있습니다.
 
 {% highlight html %}
 {% raw %}
@@ -111,7 +111,7 @@ site_categories 에서 카테고리 이름들을 **categories_List** 라는 변�
 
 <hly>Jekyll 테마의 디렉토리 중 _layouts 폴더에 category.html을 만들어 줍니다!</hly>  
 
-이번엔 지킬 테마에 있던 `_layouts/post-list.html`을 사용하여 수정이 필요한 부분만 바꿨어용  
+이번엔 지킬 테마에 있던 `_layouts/post-list.html`을 사용하여 필요한 부분만 수정했어용  
 
 {% highlight html %}
 {% raw %}
@@ -127,19 +127,15 @@ site_categories 에서 카테고리 이름들을 **categories_List** 라는 변�
 {% endhighlight %}
 
 
-{% raw %}
-{% assign category = page.title %}  
-{% endraw %}
-
+<kbd>{% assign category = page.title %}</kbd>  
 위 코드는 현재 페이지의 title을 category 라는 변수에 할당하는 일을 합니다.  
 __따라서 category 레이아웃을 사용하는 page의 title은 카테고리와 동일하게 설정해야 합니다.__  
 
-{% raw %}
-{% for post in site.categories[category] %}  
-{% endraw %}
 
+<kbd>{% for post in site.categories[category] %}</kbd>  
 여기선 위에서 얻어온 category와 동일한 category를 가지는 post 들만 뽑아오게 됩니다.  
 
+- - -
 
 ## layout이 category인 마크다운문서 만들기  
 
@@ -153,8 +149,9 @@ __카테고리 이름과 동일한 이름의 마크다운문서__ 를 추가해 
     <figcaption>categories 디렉토리 모습</figcaption>
 </figure>
 
+<br/>
 
-각 파일은 'YAML 머리말' 의 layout과 title만 가지면 끄읕.
+각 파일은 'YAML 머리말' 의 layout과 title만 가지면 끄읕.  
 Algorithm 을 예로 들면 아래와 같이 작성하면 됩니다.
 
 ~~~
