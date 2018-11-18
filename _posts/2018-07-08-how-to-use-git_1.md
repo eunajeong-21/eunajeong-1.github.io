@@ -125,7 +125,7 @@ _markdown 문서의 파일 이름은 `YYYY-MM-DD-제목.md` 의 형식을 지켜
 예를 들어 github 저장소에 \_posts/test 라는 폴더를 삭제하려면 다음 명령어들을 입력하면 됩니다.
 
 <figure>
-  <img src = "../assets/img/post/git_remove_commands.PNG"/>
+  <img style="width: 60%;" src = "../assets/img/post/git_remove_commands.PNG"/>
 </figure>
 
 파일 삭제는 원격 저장소에서만 삭제 하려면 `$git rm --cached <파일이름>`
