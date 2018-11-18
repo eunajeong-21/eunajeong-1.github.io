@@ -90,10 +90,8 @@ _markdown 문서의 파일 이름은 `YYYY-MM-DD-제목.md` 의 형식을 지켜
 
 참고로 git add와 git commit이 명령을 수행하는 단계가 있는데, 아래 그림처럼 동작합니다.
 
-<figure>
-<img style="width: 50%;" src = "https://png93.github.io/assets/img/post/git layer.png"/>
-</figure>
-
+![](../assets/img/post/git layer.png)
+{: width="50%"}
 
 이제 명령어들을 차례대로 볼께요.
 
@@ -128,7 +126,7 @@ _markdown 문서의 파일 이름은 `YYYY-MM-DD-제목.md` 의 형식을 지켜
   <img style="width: 60%;" src = "../assets/img/post/git_remove_commands.PNG"/>
 </figure>
 
-파일 삭제는 원격 저장소에서만 삭제 하려면 `$git rm --cached <파일이름>`
+파일 삭제는 원격 저장소에서만 삭제 하려면 `$git rm --cached <파일이름>`  
 원격 저장소와 로컬 두 곳 모두 삭제하려면  `$git rm <파일이름>`
 {: .notice}
 
