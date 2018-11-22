@@ -1,4 +1,4 @@
 ---
-layout: Category
+layout: category
 title: JAVA
 ---
