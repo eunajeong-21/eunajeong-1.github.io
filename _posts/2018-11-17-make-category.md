@@ -163,12 +163,12 @@ __카테고리 이름과 동일한 이름의 마크다운문서__ 를 추가해 
 각 파일은 'YAML 머리말' 의 layout과 title만 가지면 끄읕.  
 Algorithm 을 예로 들면 아래와 같이 작성하면 됩니다.
 
-{% raw %}
+~~~
 ---
 layout: category  
 title: Algorithm
 ---
-{% endraw %}
+~~~
 
 
 이제 각각의 카테고리는 `/categories/(카테고리명)`과 같은 url에서 다음과 같은 페이지를 나타냅니다.  
