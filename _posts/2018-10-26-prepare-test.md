@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[취준] GCP 필기테스트 대비"
+title: "[취준] 필기테스트 대비"
 date: 2018-10-26
 excerpt: "데이터베이스, 통신, 알고리즘 등"
 tag:
