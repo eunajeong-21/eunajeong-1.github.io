@@ -22,10 +22,10 @@ comments: true
 
 
 ## 순서  
-1. [css로 위치 및 모양 설정하기](#css로-위치-및-모양-설정하기)
-2. [post-list.html 파일 수정하기](#html-파일-수정하기)
+1. [위치 및 모양 설정하는 css클래스 만들기](#위치-및-모양-설정하는-css클래스-만들기)
+2. [html파일을 css클래스 이용하여 수정하기](#html파일을-css클래스-이용하여-수정하기)
 
-## css로 위치 및 모양 설정하기
+## 위치 및 모양 설정하는 css클래스 만들기
 
 Jekyll 블로그 디렉토리를 보면 css 파일을 모아둔 곳이 있는데요.  
 저는 `_sass/site.scss`에 사이트와 관련된 css가 설정되어 있어서 이곳에서 작업을 진행했습니다!  
@@ -46,7 +46,7 @@ Jekyll 블로그 디렉토리를 보면 css 파일을 모아둔 곳이 있는데
 	@media #{$small} {
 		width: 90%;
 		padding: 2em 0;
-	    box-shadow: none;
+	  box-shadow: none;
 	}
 }
 
@@ -79,6 +79,56 @@ Jekyll 블로그 디렉토리를 보면 css 파일을 모아둔 곳이 있는데
 </header>
 ~~~
 
+<figure>
+  <img src = "../assets/img/make-category-menu/03.png">
+  <figcaption> css로 변경한 주요 부분 </figcaption>
+</figure>
 
 
-## html 파일 수정하기
+## html파일을 css클래스 이용하여 수정하기
+다음으로 html 에 css클래스를 추가해주고, 카테고리를 나타내는 html코드도 추가하였습니다.  
+
+[post-list.html]
+~~~html
+<header class="header" role="banner">
+      <div class="post_wrapper animated fadeIn">
+          <!-- 생략 (포스트 목록 나타내는 코드) -->
+      </div>
+      <!-- 카테고리 -->
+      {% include categorybox.html %}
+</header>
+~~~
+
+[categorybox.html]
+~~~html
+{% raw %}
+{% capture site_categories %}
+    {% for category in site.categories %}{{ category | first }}
+      {% unless forloop.last %},{% endunless %}
+    {% endfor %}
+{% endcapture %}
+{% assign categories_list = site_categories | split:',' | sort %}
+
+<div class="category_box animated fadeIn">
+   <h2> CATEGORY </h2>           
+   <ul>
+    {% for item in (0..site.categories.size) %}{% unless forloop.last %}  
+       {% capture this_word %}{{ categories_list[item] | strip_newlines }}{% endcapture %}
+       <li><a href=" {{site.url}}/categories/{{this_word | strip }} "> {{ this_word }} </a></li><br/>
+    {% endunless %}{% endfor %}
+   </ul>
+</div>
+{% endraw %}
+~~~
+
+
+저는 post-list.html과 category.html 두 곳에 category 영역을 추가했기 때문에 categorybox.html을 별개로 만들어 include 해주었어요!  
+
+include 하는 파일들은 \_includes 폴더에 만들어 주면 된답니다.  
+
+---
+
+어찌보면 사소하게 바꾼거라 작성을 할까말까 했는데, 적어 놓지 않으면 잘 까먹는 사람인지라 역시 기록해 두는게 좋을 것 같아 글을 남겨봅니다..ㅎㅎ  
+내가 바꿔 놓은건데 나중가서 '이거 어떻게 한거지?' 이러고 있을순 없으니까요 &#128557;
+
+그나저나 github + jekyll 블로그를 사용하니 입맛대로 만들어가는 재미가 있는거 같아요 &#128077;
