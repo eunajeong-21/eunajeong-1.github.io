@@ -112,7 +112,7 @@ site_categories 에서 카테고리 이름들을 categories_List 라는 변수�
 ## category 레이아웃 만들기
 
 다음으로 카테고리별로 포스트 목록을 보여주는 페이지를 만들기 위해서  
-Jekyll 테마의 디렉토리 중 <hly>`_layouts` 폴더에 category.html을 만들어 줍니다!</hly>  
+Jekyll 테마의 디렉토리 중 __<hly>_layouts 폴더에 category.html을 만들어 줍니다!</hly>__  
 
 (category.html을 만든 후, 다음에 만들 markdown문서의 layout으로 사용 할 거에요.)  
 
