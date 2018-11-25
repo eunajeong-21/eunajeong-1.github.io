@@ -36,7 +36,10 @@ comments: true
 1. categories/index.html 만들기
 2. \_layouts 폴더에 category.html 만들기
 3. categories 폴더에 카테고리 이름과 동일한 이름의 markdown문서 만들기
-4. markdown 문서에는 layout: category, title: "카테고리" 작성하기
+4. 3번에서 만든 markdown 문서에는  
+  `layout: category`  
+  `title: "카테고리"`  
+   YAML 작성하기
 
 - - -
 
@@ -58,7 +61,7 @@ __<hly> categories/index.html 파일을 가장 먼저 만들어 주세요~ </hly
 
 처음엔 이게 당최 무슨 언어인가 했는데, 'Liquid' 라는 언어라고 합니다.. 액체 언어... 처음 들었어요..ㅎㅎ  
 
-찾아보니 아래의 사이트에 사용법들이 잘 정리되어 있고, 막 엄청 어렵지는 않아요?  
+찾아보니 아래의 사이트에 사용법들이 잘 정리되어 있고, 음..막 엄청 어렵지는 않아요?  
 
 [Liquid 사이트](http://shopify.github.io/liquid/)  
 {: .notice}
@@ -97,11 +100,11 @@ site_categories 에서 카테고리 이름들을 categories_List 라는 변수�
 {% endraw %}
 {% endhighlight %}
 
-위와 같은 categories/index.html 을 만들어 준 후,  
-`https://png93.github.io/categories/` 에 접속하면 내가 만들어준 카테고리별로 정리된 페이지가 나옵니다.  
+이렇게 categories/index.html 을 만들어 준 후,  
+`https://png93.github.io/categories/`에 접속하면 내가 만들어준 카테고리별로 정리된 페이지가 나옵니다.  
 
 <figure>
-    <img src="https://png93.github.io/assets/img/make-category/01.png">
+    <img src="../assets/img/make-category/01.png">
 </figure>
 
 - - -
@@ -109,8 +112,9 @@ site_categories 에서 카테고리 이름들을 categories_List 라는 변수�
 ## category 레이아웃 만들기
 
 다음으로 카테고리별로 포스트 목록을 보여주는 페이지를 만들기 위해서  
+Jekyll 테마의 디렉토리 중 <hly>`_layouts` 폴더에 category.html을 만들어 줍니다!</hly>  
 
-<hly>Jekyll 테마의 디렉토리 중 _layouts 폴더에 category.html을 만들어 줍니다!</hly>  
+(category.html을 만든 후, 다음에 만들 markdown문서의 layout으로 사용 할 거에요.)  
 
 이번엔 지킬 테마에 있던 `_layouts/post-list.html`을 사용하여 필요한 부분만 수정했어용  
 
@@ -134,8 +138,8 @@ site_categories 에서 카테고리 이름들을 categories_List 라는 변수�
 {% assign category = page.title %}
 {% endraw %}
 ~~~
-위 코드는 현재 페이지의 title을 category 라는 변수에 할당하는 일을 합니다.  
-__따라서 category 레이아웃을 사용하는 page의 title은 카테고리와 동일하게 설정해야 합니다.__  
+위 코드에서 assign은 현재 페이지의 title을 category라는 변수에 할당하는 일을 합니다.  
+__따라서 category 레이아웃을 사용하는 page(markdown문서)의 title은 카테고리와 동일하게 설정해야 합니다.__  
 
 ~~~
 {%- raw -%}
@@ -151,7 +155,7 @@ __따라서 category 레이아웃을 사용하는 page의 title은 카테고리�
 레이아웃을 만들었으니 사용을 해야겠죠!  &#128515;
 
 맨 처음에 만들었던 categories 폴더에  
-__카테고리 이름과 동일한 이름의 마크다운문서__ 를 추가해 줍니다. <hlr>(★x1000)</hlr>
+__카테고리 이름과 동일한 이름의 마크다운문서__ 를 만들어 줍니다. <hlr>(★x1000)</hlr>
 
 <figure>
     <img src="https://png93.github.io/assets/img/make-category/03.JPG">
