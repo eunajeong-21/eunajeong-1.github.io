@@ -95,7 +95,9 @@ Jekyll 블로그 디렉토리를 보면 css 파일을 모아둔 곳이 있는데
           <!-- 생략 (포스트 목록 나타내는 코드) -->
       </div>
       <!-- 카테고리 -->
+      {%- raw -%}
       {% include categorybox.html %}
+      {%- endraw -%}
 </header>
 ~~~
 
