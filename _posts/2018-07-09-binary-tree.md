@@ -13,7 +13,7 @@ comments: true
 
 이진 트리, binary tree
 ==
-**이진 트리는 모든 노드가 최대 2개까지의 자식 노드만 가질 수 있는 트리 입니다.**
+**이진 트리는 모든 노드가 최대 2개까지의 자식 노드만 가질 수 있는 트리**
 
 ## 이진 트리 종류
 **1. 포화 이진 트리 (Full Binary Tree)**
@@ -37,7 +37,7 @@ comments: true
 
 <br/>
 
-아래와 같은 형태는 완전 이진 트리가 아닙니다. 왼쪽 부터 차례대로 채워지지가 않았으니까요.
+아래와 같은 형태는 완전 이진 트리가 아님! 왼쪽 부터 차례대로 채워지지가 않았으니까
 {: .notice}
 
 <img src = "https://png93.github.io/assets/img/post/tree_no_complete_binary.png" style="width: 50%;" />
@@ -54,27 +54,27 @@ comments: true
 
 <br/>
 
-_이진 트리는 컴파일러나 탐색 등에 사용 되는 자료구조이기 때문에, 성능을 높이기 위해 가능한 완전한 모습으로 만드는 것이 중요합니다._
+_이진 트리는 컴파일러나 탐색 등에 사용 되는 자료구조이기 때문에, 성능을 높이기 위해 가능한 완전한 모습으로 만드는 것이 중요._
 
 <br/><br/><br/>
 
 ## 이진 트리 순회 (Traversal)
 
 **1. 전위 순회 (Preorder Traversal)**
-- 전위 순회는 '**루트** 노드 - **왼쪽** 하위 트리 - **오른쪽** 하위 트리' 순서로 트리를 순회하는 방법 입니다.
+- 전위 순회는 '**루트** 노드 - **왼쪽** 하위 트리 - **오른쪽** 하위 트리' 순서로 트리를 순회하는 방법.
 
 <img src = "https://png93.github.io/assets/img/post/tree_preorder.png" style="width: 50%;" /><br/>
 
 **2. 중위 순회 (Inorder Traversal)**
-- 중위 순회는 '**왼쪽** 하위 트리 - **루트** 노드 - **오른쪽** 하위 트리' 순서로 트리를 순회하는 방법 입니다.
+- 중위 순회는 '**왼쪽** 하위 트리 - **루트** 노드 - **오른쪽** 하위 트리' 순서로 트리를 순회하는 방법.
 
 <img src = "https://png93.github.io/assets/img/post/tree_inorder.png" style="width: 50%;" /><br/>
 
-중위 순회는 대표적으로 '수식 트리'에 활용 됩니다.
+중위 순회는 대표적으로 '수식 트리'에 활용 .
 <br/>
 
 **3. 후위 순회 (Postorder Traversal)**
-- 후위 순회는 '**왼쪽** 하위 트리 - **오른쪽** 하위 트리 - **루트** 노드' 순서로 트리를 순회하는 방법 입니다.
+- 후위 순회는 '**왼쪽** 하위 트리 - **오른쪽** 하위 트리 - **루트** 노드' 순서로 트리를 순회하는 방법.
 
 <img src = "https://png93.github.io/assets/img/post/tree_postorder.png" style="width: 50%;" />
 
