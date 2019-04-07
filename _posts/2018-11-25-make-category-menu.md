@@ -2,7 +2,7 @@
 layout: post
 title: "포스트 목록 페이지에 메뉴영역 추가하기"
 date: 2018-11-25
-excerpt: "지킬 테마에 category menu 영역을 추가해 보았습니다."
+excerpt: "지킬 테마에 category menu 영역 추가."
 tag:
 - markdown
 - jekyll
@@ -16,9 +16,9 @@ comments: true
   <img src = "../assets/img/make-category-menu/02.png">
 </figure>
 
-첫 번째 사진은 제가 다운받은 테마의 원래 모습이고, 두 번째 사진은 category 메뉴 영역을 추가한 뒤의 모습입니다!  
+첫 번째 사진은 내가 다운받은 테마의 원래 모습이고, 두 번째 사진은 category 메뉴 영역을 추가한 뒤의 모습!  
 
-어떻게 만들었는지 그 과정들을 작성해 볼게요. 레고! &#128540;  
+어떻게 만들었는지 그 과정을 작성해보자. 레고! &#128540;  
 
 
 ## 순서  
@@ -27,10 +27,10 @@ comments: true
 
 ## 위치 및 모양 설정하는 css클래스 만들기
 
-Jekyll 블로그 디렉토리를 보면 css 파일을 모아둔 곳이 있는데요.  
-저는 `_sass/site.scss`에 사이트와 관련된 css가 설정되어 있어서 이곳에서 작업을 진행했습니다!  
+Jekyll 블로그 디렉토리를 보면 css 파일을 모아둔 곳이 있는데,
+`_sass/site.scss`에 사이트와 관련된 css가 설정되어 있어서 이곳에서 작업을 진행했다.  
 
-아래와 같은 코드를 추가해 주었어요.
+아래와 같은 코드를 추가.
 ~~~css
 .post_wrapper{
   float: right;
@@ -68,7 +68,7 @@ Jekyll 블로그 디렉토리를 보면 css 파일을 모아둔 곳이 있는데
 ~~~
 
 요렇게 만들어준 post_wrapper와 category_box css클래스는  
-아래와 같은 html구조에서 사용하게 될거에요.  
+아래와 같은 html구조에서 사용하게 될 예정.  
 
 ~~~html
 <header>
@@ -86,7 +86,7 @@ Jekyll 블로그 디렉토리를 보면 css 파일을 모아둔 곳이 있는데
 
 
 ## html파일을 css클래스 이용하여 수정하기
-다음으로 html 에 css클래스를 추가해주고, 카테고리를 나타내는 html코드도 추가하였습니다.  
+다음으로 html 에 css클래스를 추가해주고, 카테고리를 나타내는 html코드도 추가했다.  
 
 [post-list.html]
 ~~~html
@@ -124,13 +124,8 @@ Jekyll 블로그 디렉토리를 보면 css 파일을 모아둔 곳이 있는데
 ~~~
 
 
-저는 post-list.html과 category.html 두 곳에 category 영역을 추가했기 때문에 categorybox.html을 별개로 만들어 include 해주었어요!  
+post-list.html과 category.html 두 곳에 category 영역을 추가했기 때문에 categorybox.html을 별개로 만들어 include 해주기!  
 
-include 하는 파일들은 \_includes 폴더에 만들어 주면 된답니다.  
+include 하는 파일들은 \_includes 폴더에 만들어 주면 된다.  
 
 ---
-
-어찌보면 사소하게 바꾼거라 작성을 할까말까 했는데, 적어 놓지 않으면 잘 까먹는 사람인지라 역시 기록해 두는게 좋을 것 같아 글을 남겨봅니다..ㅎㅎ  
-내가 바꿔 놓은건데 나중가서 '이거 어떻게 한거지?' 이러고 있을순 없으니까요 &#128557;
-
-그나저나 github + jekyll 블로그를 사용하니 입맛대로 만들어가는 재미가 있는거 같아요 &#128077;
