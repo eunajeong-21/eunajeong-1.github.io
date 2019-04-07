@@ -18,8 +18,8 @@ _『뇌를 자극하는 알고리즘』 을 바탕으로 공부한 내용입니�
 트리, Tree
 ==
 <br>
-트리는 이름처럼 나무를 닮은 자료구조입니다.
-그런데 거꾸로 자라는 나무 모습을 하고 있어요.
+트리는 이름처럼 나무를 닮은 자료구조!  
+그런데 거꾸로 자라는 나무 모습을 하고 있다.
 
 HTML의 DOM(Document Object Model)에서 트리 구조를 찾아 볼 수 있습니다.
 
@@ -32,7 +32,7 @@ HTML의 DOM(Document Object Model)에서 트리 구조를 찾아 볼 수 있습�
 * 가지 (branch)
 * 잎 (leaf / terminal)
 
-트리는 뿌리, 가지, 잎 세 가지로 구성되어 있습니다.
+트리는 뿌리, 가지, 잎 세 가지로 구성되어 있다.
 
 
 <img src = "https://png93.github.io/assets/img/post/tree_nodename.png" width = "70%" />
@@ -63,9 +63,9 @@ HTML의 DOM(Document Object Model)에서 트리 구조를 찾아 볼 수 있습�
 ## 3. 노드의 표현 : Left Child - Right Sibling
 
 
-노드를 표현하는 방법 중에 "left child - right sibling" 이라는 방법이 있습니다.
+노드를 표현하는 방법 중에 "left child - right sibling" 이라는 방법이 있는데,
 
-말 그대로 왼쪽에는 자식 노드, 오른쪽에는 형제 노드를 가리키도록 노드를 구성하는 방법입니다.
+말 그대로 왼쪽에는 자식 노드, 오른쪽에는 형제 노드를 가리키도록 노드를 구성하는 방법이다.
 
 <a href = "http://4.bp.blogspot.com/-Z63Mj1jINXA/VO1AXfUCGcI/AAAAAAAAAuM/QoFP9qTvhvg/s1600/2.PNG"><img src = "http://4.bp.blogspot.com/-Z63Mj1jINXA/VO1AXfUCGcI/AAAAAAAAAuM/QoFP9qTvhvg/s1600/2.PNG" /></a>
 
