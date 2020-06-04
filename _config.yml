@@ -1,7 +1,7 @@
 # Site
 title:              Euna's Blog
-bio:                '안녕하세요!! 저는 중부대학교 재학중인 '
-description:        "."
+bio:                '안녕하세요!! 저는 중부대학교 재학중인 정은아입니다 '
+description:        "제 블로그에 오신걸 환영합니다."
 reading_time:       true
 words_per_minute:   200
 logo:               'euna.jpg'
@@ -39,7 +39,7 @@ disqus_shortname:   https-png93-github-io
 #bing-verify:
 #email:
 #twitter:            username
-#facebook:           username
+facebook-url:       "profile.php?id=100005188909098"
 github-url:         "eunajeong-21"    # https://github.com/ 뒤 주소만 입력
 #stackoverflow:     123456/username   from a "http://stackoverflow.com/users/123456/username" link
 #linkedin:          username
