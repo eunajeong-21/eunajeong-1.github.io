@@ -4,7 +4,9 @@ title: "favorite"
 date: 2020-06-04
 excerpt: "내가 좋아하는 것들"
 tag:
-- Disqus
+- food
+- favorite
+- music
 category: [ favorite ]
 feature: https://png93.github.io/assets/img/title/basic.jpg
 comments: true
