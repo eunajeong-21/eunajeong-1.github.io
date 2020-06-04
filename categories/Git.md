@@ -1,4 +1,4 @@
 ---
 layout: category
-title: Git
+title: 일상생활
 ---
