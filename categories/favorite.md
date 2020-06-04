@@ -1,6 +1,6 @@
 ---
 
 layout: category
-title: Jekyll 블로그
+title: favorite 
 
 ---
